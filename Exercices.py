@@ -128,14 +128,42 @@
 
 #-----------------------------------------------------------------------------
 
-print("\n----------ANO BISSEXTO----------\n")
+#print("\n----------ANO BISSEXTO----------\n")
 
-print("\nDigite um ano para verificar se é um ano bissexto!\n")
+#print("\nDigite um ano para verificar se é um ano bissexto!\n")
 
-ano= int(input("Digite um algum ano\nR: "))
+#ano= int(input("Digite um algum ano\nR: "))
 
-if ano % 4 or ano % 400:
-    print("Este ano é bissexto!")
-elif not ano % 100:
-    print("Tente novamente!")
+#if ano % 4 or ano % 400:
+#    print("Este ano é bissexto!")
+#elif not ano % 100:
+#    print("Tente novamente!")
 
+#-----------------------------------------------------------------------------
+
+#Login com Níveis: Peça o login. Se for "admin", peça a senha. Se a senha
+#estiver correta, pergunte se quer "Reiniciar Sistema" ou "Desligar". Se o login
+#não for "admin", diga "Acesso de Usuário Comum"
+
+print("\n----------LOGIN----------\n")
+
+login= input("Nome de Usuário: ")
+senha= 170106
+
+if login == "admin":
+    senha= input("\nDigite a senha: ")
+    if senha =="170106":
+        print("\n---Acesso de ADMINISTRADOR concedido!---\n")
+        sistema= input("Deseja reiniciar o sistema? (s/n)\nR: ")
+        if sistema =="s":
+            print("Sitema reiniciado")
+        elif sistema =="n":
+            sistema= input("Deseja desligar? (s/n)\n")
+            if sistema =="s":
+                print("FIM DO PROGRAMA")
+            else:
+                print("Sistema reiniciado")
+    else:
+        print("Senha incorreta! Tente novamente.")
+else:
+    print("Acesso de Usuário Comum")
