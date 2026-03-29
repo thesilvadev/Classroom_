@@ -141,29 +141,51 @@
 
 #-----------------------------------------------------------------------------
 
+#print("\n----------NUMERO SECRETO----------\n")
+
+#num="s"
+
+#print("tente acertar o numero secreto\n")
+
+#while num =="s":
+#    numero= int(input("DESCUBRA A SENHA! DIGITE UM NUMERO\nR: "))
+#    if numero ==0:
+#        print("Você encontrou o numero secreto!")
+#        num= input("Deseja continuar? (s/n)\nR: ")
+#    else:
+#        print("voce errou! Tente novamente.")
+#print("FIM DO PROGRAMA")
+
+#------------------------------------------------------------------------------
+
 #Login com Níveis: Peça o login. Se for "admin", peça a senha. Se a senha
 #estiver correta, pergunte se quer "Reiniciar Sistema" ou "Desligar". Se o login
 #não for "admin", diga "Acesso de Usuário Comum"
-
 print("\n----------LOGIN----------\n")
+    
+sen2= "170106"
+user= "admin"
+senha= "170106"
 
-login= input("Nome de Usuário: ")
-senha= 170106
+login= input("Nome de Usuário: ").lower().strip()
 
-if login == "admin":
-    senha= input("\nDigite a senha: ")
-    if senha =="170106":
-        print("\n---Acesso de ADMINISTRADOR concedido!---\n")
-        sistema= input("Deseja reiniciar o sistema? (s/n)\nR: ")
-        if sistema =="s":
-            print("Sitema reiniciado")
-        elif sistema =="n":
-            sistema= input("Deseja desligar? (s/n)\n")
-            if sistema =="s":
-                print("FIM DO PROGRAMA")
-            else:
-                print("Sistema reiniciado")
-    else:
-        print("Senha incorreta! Tente novamente.")
-else:
+
+if login != user:
     print("Acesso de Usuário Comum")
+
+else:
+    sen1= input("\nDigite a senha: ")
+    if sen1 == senha:
+        print("\nACESSO DE ADMINISTRADOR CONCEDIDA")
+    else:
+        while True:   
+            ask2= input("\nSenha Incorreta! Tentar novamente? (s/n)\nR: ")
+
+            if ask2 == "n":
+                print("FIM DO PROGRAMA")
+                break
+            elif ask2 == "s":
+                sen2= input("\nDigite a senha: ")
+                if sen2 == senha:
+                    print("\nACESSO DE ADMINISTRADOR CONCEDIDA")
+                    break
