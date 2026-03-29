@@ -162,50 +162,75 @@
 #estiver correta, pergunte se quer "Reiniciar Sistema" ou "Desligar". Se o login
 #não for "admin", diga "Acesso de Usuário Comum"
 
-while True:
-    print("\n----------LOGIN----------\n")
+#while True:
+#    print("\n----------LOGIN----------\n")
     
-    user= "admin"
-    senha= "170106"
+#    user= "admin"
+#    senha= "170106"
 
 
-    login= input("\nNome de Usuário: ").lower().strip()
+#    login= input("\nNome de Usuário: ").lower().strip()
 
 
-    if login != user:
-        user_c= str(input("\nDigite a senha: "))
-        print("\nAcesso de Usuário Comum Concedida")
+#    if login != user:
+#        user_c= str(input("\nDigite a senha: "))
+#        print("\nAcesso de Usuário Comum Concedida")
+#
+#        reiniciar= input("\nDeseja reiniciar o sistema? (s/n)\nR: ")
+#        if reiniciar == "n":
+#            print("FIM DO PROGRAMA")
+#            break
+#
 
-        reiniciar= input("\nDeseja reiniciar o sistema? (s/n)\nR: ")
-        if reiniciar == "n":
-            print("FIM DO PROGRAMA")
-            break
+#    else:
+#        sen1= input("\nDigite a senha: ")
+#       if sen1 == senha:
+#            print("\nACESSO DE ADMINISTRADOR CONCEDIDA")
+#            reiniciar= input("\nDeseja reiniciar o sistema? (s/n)\nR: ")
+#            if reiniciar == "n":
+#                print("FIM DO PROGRAMA")
+#               break
+#        else:   
+#            ask2= input("\nSenha Incorreta! Tentar novamente? (s/n)\nR: ")
+#            if ask2 == "n":
+#                print()
+#            while True:
+#
+#                if ask2 == "n":
+#                    print("FIM DO PROGRAMA")
+#                    break
+#                elif ask2 == "s":
+#                    sen2= input("\nDigite a senha: ")
+#                    if sen2 == senha:
+#                        print("\nACESSO DE ADMINISTRADOR CONCEDIDA\n")
+#                       reiniciar= input("\nDeseja reiniciar o sistema? (s/n)\nR: \n")
+#                        if reiniciar == "n":
+#                            break
+#                    else:
+#                        ask2= input("\nSenha Incorreta! Tentar novamente? (s/n)\nR: ")
+#
+#----------------------------------------------------------------------------------------
+
+#Clima e Vestimenta: Pergunte se está chovendo (S/N). Se sim, pergunte se está
+#ventando forte (S/N). Se chover e ventar, diga "Use capa de chuva reforçada".
+#Se apenas chover, "Use guarda-chuva". Se não chover, diga "Tenha um bom dia"
 
 
-    else:
-        sen1= input("\nDigite a senha: ")
-        if sen1 == senha:
-            print("\nACESSO DE ADMINISTRADOR CONCEDIDA")
-            reiniciar= input("\nDeseja reiniciar o sistema? (s/n)\nR: ")
-            if reiniciar == "n":
-                print("FIM DO PROGRAMA")
-                break
-        else:   
-            ask2= input("\nSenha Incorreta! Tentar novamente? (s/n)\nR: ")
-            if ask2 == "n":
-                print()
-            while True:
+#print("\n-----CLIN ASSISTENTE METEREOLOGICO (×_×)-----\n")
 
-                if ask2 == "n":
-                    print("FIM DO PROGRAMA")
-                    break
-                elif ask2 == "s":
-                    sen2= input("\nDigite a senha: ")
-                    if sen2 == senha:
-                        print("\nACESSO DE ADMINISTRADOR CONCEDIDA\n")
-                        reiniciar= input("\nDeseja reiniciar o sistema? (s/n)\nR: \n")
-                        if reiniciar == "n":
-                            break
-                    else:
-                        ask2= input("\nSenha Incorreta! Tentar novamente? (s/n)\nR: ")
+#nome= input("Olá meu nome é Clin, assistente virtual de metereologia \(^o^)/\n\nPara te conhecer melhor, por favor digite seu nome: ")
+#chovendo= input(f"\n É um prazer te ajudar {nome}! Me diz uma coisa, está chovendo hoje? (s/n)\nR: ")
+
+#if chovendo =="s":
+#    ventando= input("\nNossa...(ó﹏ò｡)\n\nE está ventando? (s/n)\nR: ")
+#    if ventando == "s":
+#        print("\n(｡Ó﹏Ò｡) !! USE A CAPA DE CHUVA REFORÇADAA")
+#    elif ventando == "n":
+#        print("\n(◠‿◠) Não esqueça do guarda-chuva!")
+#else:
+#    print("\nUfa! Tenha um bom dia! (⌐■_■) ")
+#
+#---------------------------------------------------------------------------------------   
+   
+
                         
