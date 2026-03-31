@@ -245,7 +245,7 @@ calc= saque + 2
 
 
 if saque % 10 == 0 and saque > 500:
-    taxa= input("Para efetuar o saque, deseja pagar a taxa de R$2,00?")
+    taxa= input("Para efetuar o saque, deseja pagar a taxa de R$2,00?\nR: ")
     if taxa == "s":
         print(f"O saque total é R${calc}")
 else:
