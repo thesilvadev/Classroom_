@@ -237,16 +237,35 @@
 #pergunte se o cliente aceita pagar uma taxa de R$ 2,00 caso o valor seja
 #superior a R$ 500. Exiba o status final da operação]
 
-print("\n----------CAIXA ELETRONICO----------\n")
+#print("\n----------CAIXA ELETRONICO----------\n")
 
-saque= int(input("Digite o valor a ser sacado\nR: "))
-taxa= 2
-calc= saque + 2
+#saque= int(input("Digite o valor a ser sacado\nR: "))
+#taxa= 2
+#calc= saque + 2
 
 
-if saque % 10 == 0 and saque > 500:
-    taxa= input("Para efetuar o saque, deseja pagar a taxa de R$2,00?\nR: ")
-    if taxa == "s":
-        print(f"O saque total é R${calc}")
-else:
-    print(f"Saque efetuado R${saque}!")
+#if saque % 10 == 0 and saque > 500:
+#    taxa= input("Para efetuar o saque, deseja pagar a taxa de R$2,00?\nR: ")
+#   if taxa == "s":
+#        print(f"O saque total é R${calc}")
+#else:
+#    print(f"Saque efetuado R${saque}!")
+#
+# --------------------------------------------------------------------------------------
+#Raízes de Equação de 2º Grau: Peça os coeficientes A, B e C. Calcule o
+#Delta. Se Delta < 0, diga "Não há raízes reais". Se Delta == 0, calcule e
+#mostre a única raiz. Se Delta > 0, mostre as duas raízes. (Use math.sqrt)
+import math
+
+print("\n------------RAIZES EQUAÇÃO DO 2° GRAU------------\n")
+
+
+print("\nCalcule a raiz da equação de 2° grau:\n")
+
+a= int(input("Coeficiente A: "))
+b= int(input("Coeficiente B: "))
+c= int(input("Coeficiente C: "))
+
+
+
+
