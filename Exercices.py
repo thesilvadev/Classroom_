@@ -231,6 +231,22 @@
 #    print("\nUfa! Tenha um bom dia! (⌐■_■) ")
 #
 #---------------------------------------------------------------------------------------   
-   
 
-                        
+#Simulador de Caixa Eletrônico: Peça o valor a ser sacado (inteiro).
+#Verifique se o valor é múltiplo de 10 (únicas notas disponíveis). Se for,
+#pergunte se o cliente aceita pagar uma taxa de R$ 2,00 caso o valor seja
+#superior a R$ 500. Exiba o status final da operação]
+
+print("\n----------CAIXA ELETRONICO----------\n")
+
+saque= int(input("Digite o valor a ser sacado\nR: "))
+taxa= 2
+calc= saque + 2
+
+
+if saque % 10 == 0 and saque > 500:
+    taxa= input("Para efetuar o saque, deseja pagar a taxa de R$2,00?")
+    if taxa == "s":
+        print(f"O saque total é R${calc}")
+else:
+    print(f"Saque efetuado R${saque}!")
