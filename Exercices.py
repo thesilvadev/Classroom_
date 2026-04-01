@@ -266,6 +266,26 @@ a= int(input("Coeficiente A: "))
 b= int(input("Coeficiente B: "))
 c= int(input("Coeficiente C: "))
 
+delta= b**2 - 4*a*c
+
+if delta <0:
+    print("Não há raízes reais")
+elif delta ==0:
+    x= -b / (2*a)
+    print(f"A unica raiz é: {x}")
+elif delta > 0:
+    x1 = (-b + math.sqrt(delta)) / (2*a)
+    x2 = (-b - math.sqrt(delta)) / (2*a)
+    print("Está equação possui 2 raizes: ")
+    print(f"x1 = {x1}")
+    print(f"x2 = {x2}")
+
+
+    
+
+
+
+
 
 
 
