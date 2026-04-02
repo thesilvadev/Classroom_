@@ -255,33 +255,56 @@
 #Raízes de Equação de 2º Grau: Peça os coeficientes A, B e C. Calcule o
 #Delta. Se Delta < 0, diga "Não há raízes reais". Se Delta == 0, calcule e
 #mostre a única raiz. Se Delta > 0, mostre as duas raízes. (Use math.sqrt)
-import math
+#import math
 
-print("\n------------RAIZES EQUAÇÃO DO 2° GRAU------------\n")
-
-
-print("\nCalcule a raiz da equação de 2° grau:\n")
-
-a= int(input("Coeficiente A: "))
-b= int(input("Coeficiente B: "))
-c= int(input("Coeficiente C: "))
-
-delta= b**2 - 4*a*c
-
-if delta <0:
-    print("Não há raízes reais")
-elif delta ==0:
-    x= -b / (2*a)
-    print(f"A unica raiz é: {x}")
-elif delta > 0:
-    x1 = (-b + math.sqrt(delta)) / (2*a)
-    x2 = (-b - math.sqrt(delta)) / (2*a)
-    print("Está equação possui 2 raizes: ")
-    print(f"x1 = {x1}")
-    print(f"x2 = {x2}")
+#print("\n------------RAIZES EQUAÇÃO DO 2° GRAU------------\n")
 
 
+#print("\nCalcule a raiz da equação de 2° grau:\n")
+
+#a= int(input("Coeficiente A: "))
+#b= int(input("Coeficiente B: "))
+#c= int(input("Coeficiente C: "))
+
+#delta= b**2 - 4*a*c
+
+#if delta <0:
+#    print("Não há raízes reais")
+#elif delta ==0:
+#    x= -b / (2*a)
+#   print(f"A unica raiz é: {x}")
+#elif delta > 0:
+#   x1 = (-b + math.sqrt(delta)) / (2*a)
+#    x2 = (-b - math.sqrt(delta)) / (2*a)
+#    print("Está equação possui 2 raizes: ")
+#    print(f"x1 = {x1}")
+#    print(f"x2 = {x2}")
+#
+#----------------------------------------------------------------------------------------
+
+#Faça um programa que peça uma nota, entre zero e dez. Mostre uma mensagem caso o valor seja inválido e continue pedindo até que o usuário informe um valor válido.
+
+#nota = float(input("Digite uma nota: "))
+
+#while nota >10 or nota <0:
+#   nota= float(input("Digite uma nota válida: "))
+#    if nota <=10 and nota >=0:
+#        print("Nota validada!")
+
+#-----------------------------------------------------------------------------------------
+
+#Faça um programa que leia um nome de usuário e a sua senha e não aceite a senha igual ao nome do usuário, mostrando uma mensagem de erro e voltando a pedir as informações.
+
+nome= input("Digite seu nome\nR: ")
+senha= input("Digite a senha\nR: ")
+
+
+while senha == nome:
+    print("\nErro, a senha não pode ser igual ao nome de usuario!\n")
+    nome = input("Digite o seu nome de usuario: ")
+    senha = input("Digite a sua senha: ")
     
+
 
 
 
