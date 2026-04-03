@@ -295,20 +295,113 @@
 
 #Faça um programa que leia um nome de usuário e a sua senha e não aceite a senha igual ao nome do usuário, mostrando uma mensagem de erro e voltando a pedir as informações.
 
-nome= input("Digite seu nome\nR: ")
-senha= input("Digite a senha\nR: ")
+#nome= input("Digite seu nome\nR: ")
+#senha= input("Digite a senha\nR: ")
 
 
-while senha == nome:
-    print("\nErro, a senha não pode ser igual ao nome de usuario!\n")
-    nome = input("Digite o seu nome de usuario: ")
-    senha = input("Digite a sua senha: ")
+#while senha == nome:
+#    print("\nErro, a senha não pode ser igual ao nome de usuario!\n")
+#    nome = input("Digite o seu nome de usuario: ")
+#    senha = input("Digite a sua senha: ")
     
+#------------------------------------------------------------------------------------------
 
+#Peça um número inteiro ao usuário e diga se ele é par ou impar:
 
+#num= int(input("Digite um numero\nR: "))
 
+#if num % 2 ==0:
+#    print("Este número é par")
+#else:
+#    print("Este número é impar")
 
+#-----------------------------------------------------------------------------------------    
 
+#Peça a idade de uma pessoa e informe se ela é maior ou menor de idade:
+
+#idade= int(input("Digite sua idade\nR: "))
+
+#if idade >= 18:
+#    print("Você é maior de idade!")
+#else:
+#    print("Você é de menor!")
+
+#---------------------------------------------------------------------------------------
+
+#Peça um número e informe se ele é:positivo, negativo ou zero
+
+#num= float(input("Digite um número\nR: "))
+
+#if num >0:
+#    print("Este numero é positivo!")
+#elif num ==0:
+#    print("Este numero é zero!")
+#else:
+#    print("Este numero é negativo")
+
+#--------------------------------------------------------------------------------------
+
+#Peça a nota de um aluno e mostre: Aprovado, se a nota for maior ou igual a 6 Reprovado, caso contrário
+
+#nota= float(input("Digite sua nota\nR: "))
+
+#if nota >= 6:
+#    print("Voce está aprovado!")
+#else:
+#    print("Você está reprovado!")
+
+#------------------------------------------------------------------------------------------------    
+
+#Peça dois números e informe:qual é o maior ou se eles são iguais
+
+#num_1= int(input("Digite o primeiro numero\nR: "))
+#num_2= int(input("Digite o segundo numero\nR: "))
+
+#if num_1 > num_2:
+#    print(f"O numero {num_1} é o maior")
+#elif num_2 > num_1:
+#   print(f"O numero {num_2} é o maior")
+#else:
+#    print("Os numeros são iguais!")
+
+#-------------------------------------------------------------------------------------------------
+
+#Peça uma nota de 0 a 10 e mostre o conceito:
+#A → nota entre 9 e 10
+#B → nota entre 7 e 8.9
+#C → nota entre 5 e 6.9
+#D → abaixo de 5
+
+#nota= float(input("Digite sua nota\nR: "))
+
+#if nota >=9 and nota <= 10:
+#   print("Você tirou A")
+#elif nota >=7 and nota <=8.9:
+#    print("Você tirou B")
+#elif nota >= 5 and nota <=6.9:
+#   print("Você tirou C")
+#else:
+#    print("Você tirou D")
+
+#------------------------------------------------------------------------------------------------
+
+#Peça a idade de uma pessoa e classifique como:
+#Criança → até 12 anos
+#Adolescente → de 13 a 17
+#Adulto → de 18 a 59
+#Idoso → 60 ou mais
+while True:
+
+    idade= int(input("\nDigite a sua idade\nR: "))
+
+    if idade <=12:
+        print("Criança")
+    elif idade >=13 and idade <=17:
+        print("Adolescente")
+    elif idade >=18 and idade <=59:
+        print("Adulto")
+    else:
+        print("Idoso")
 
 
 
