@@ -390,18 +390,88 @@
 #Adolescente → de 13 a 17
 #Adulto → de 18 a 59
 #Idoso → 60 ou mais
-while True:
+#while True:
 
-    idade= int(input("\nDigite a sua idade\nR: "))
+#    idade= int(input("\nDigite a sua idade\nR: "))
 
-    if idade <=12:
-        print("Criança")
-    elif idade >=13 and idade <=17:
-        print("Adolescente")
-    elif idade >=18 and idade <=59:
-        print("Adulto")
-    else:
-        print("Idoso")
+#    if idade <=12:
+#        print("Criança")
+#    elif idade >=13 and idade <=17:
+#        print("Adolescente")
+#    elif idade >=18 and idade <=59:
+#        print("Adulto")
+#    else:
+#        print("Idoso")
+
+#------------------------------------------------------------------------------------------------
+
+#Calculadora simples
+
+#Peça:
+
+#o primeiro número
+#o segundo número
+#e uma operação (+, -, *, /)
+
+#print("------CALCULADORA SIMPLES-----")
+
+#num1= int(input("Digite o primeiro número\nR: "))
+#num2= int(input("Digite o segundo número\nR: "))
+
+#while True:
+#    operation= input("Digite a operação (+, -, *, /)\nR: ")
+
+#    if operation == "+":
+#        calc= num1 + num2
+#        print(f"Resultado: {calc}")
+#        break
+#    elif operation == "-":
+#        calc= num1 - num2
+#        print(f"Resultado: {calc}")
+#       break
+#    elif operation == "*":
+#        calc= num1 * num2
+#        print(f"Resultado: {calc}")
+#       break
+#    elif operation == "/":
+#        calc= num1 / num2
+#        print(f"Resultado: {calc}")
+#        break
+#    else:
+#        print("Operação inválida, tente outro operador!\n")
+#
+#------------------------------------------------------------------------------------
+
+#Dia da semana Peça um número de 1 a 7 e mostre o dia correspondente:
+
+#1 → Domingo
+#2 → Segunda
+#3 → Terça
+#...
+#7 → Sábado
+
+#Se o número for inválido, mostre uma mensagem de erro.
+#-------------------------------------------------------------------------------------------
+
+# Até o Zero: Peça números ao usuário repetidamente. O programa só para quando ele digitar 0
+
+#num= 0
+#tentativa= input("Tente acertar o numero secreto\nR: ")
+
+#while tentativa != num:
+#        tentativa= int(input("Você errou, tente novamente!\nR: "))
+#print("Parabéns! Você encontrou o número 0")
+#--------------------------------------------------------------------------------------------
+
+#Validação de Nota: Peça uma nota entre 0 e 10. Enquanto o valor for inválido, continue pedindo.
 
 
+nota= int(input("Digite uma nota entre 0 e 10\nR: "))
 
+if nota <=10 and nota >=0:
+    print("Nota validada!")
+else:
+    while nota >10 or nota <0:
+        nota= int(input("Digite uma nota válida\nR: "))
+        if nota <=10 and nota >=0:
+            print("Nota validada!")
