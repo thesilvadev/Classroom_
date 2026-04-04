@@ -466,12 +466,27 @@
 #Validação de Nota: Peça uma nota entre 0 e 10. Enquanto o valor for inválido, continue pedindo.
 
 
-nota= int(input("Digite uma nota entre 0 e 10\nR: "))
+#nota= int(input("Digite uma nota entre 0 e 10\nR: "))
 
-if nota <=10 and nota >=0:
-    print("Nota validada!")
-else:
-    while nota >10 or nota <0:
-        nota= int(input("Digite uma nota válida\nR: "))
-        if nota <=10 and nota >=0:
-            print("Nota validada!")
+#if nota >= 0 and nota <=10:
+#    print("Nota validada!")
+#else:
+#    while nota <0 or nota >10:
+#        nota= int(input("Digite uma nota válida\nR: "))
+#        if nota <=10 and nota >=0:
+#            print("Nota validada!")
+#
+#----------------------------------------------------------------------------------------------
+
+#Senha de Acesso: Crie um sistema que peça uma senha e só libere o acesso quando a senha "python123" for digitada.
+
+senha= "python123"
+tent= input("Digite a senha\nR: ")
+
+if tent == senha:
+   print("Acesso concedido!")
+
+while tent != senha:
+    tent= input("Senha incorreta, tente novamente!\nR: ")
+    if tent == senha:
+        print("Acesso concedido!")
