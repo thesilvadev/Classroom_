@@ -480,13 +480,53 @@
 
 #Senha de Acesso: Crie um sistema que peça uma senha e só libere o acesso quando a senha "python123" for digitada.
 
-senha= "python123"
-tent= input("Digite a senha\nR: ")
+#senha= "python123"
+#tent= input("Digite a senha\nR: ")
 
-if tent == senha:
-   print("Acesso concedido!")
+#if tent == senha:
+#   print("Acesso concedido!")
 
-while tent != senha:
-    tent= input("Senha incorreta, tente novamente!\nR: ")
-    if tent == senha:
-        print("Acesso concedido!")
+#while tent != senha:
+#    tent= input("Senha incorreta, tente novamente!\nR: ")
+#    if tent == senha:
+#        print("Acesso concedido!")
+#----------------------------------------------------------------------------------------------
+
+# Soma Acumulada: Peça números ao usuário e vá somando-os. Pare quando a soma total ultrapassar 100
+
+#num= int(input("Digite um numero: "))
+#soma= num
+#if num >100:
+#    print(f"O numero {num} ultrapassou o limite de 100 e não pode continuar!")
+#else:
+#    while soma <100:      
+#            num2= int(input("Digite outro numero: "))
+#           soma= soma + num2
+#            if soma >100:
+#                print(f"O numero {soma} ultrapassou o limite de 100 e não pode continuar!")
+#----------------------------------------------------------------------------------------------
+
+#Menu de Calculadora: Exiba um menu: [1] Somar [2] Subtrair [0] Sair. 
+# O programa deve repetir até o usuário escolher 0
+
+while True:
+    print("\n-----MENU CALCULADORA-----\n")
+
+    print("\nSomar [1]\nSubtrair [2]\nSair [0]\n")
+
+    menu= int(input("R: "))
+    if menu == 1:
+        print("\n----- SOMA SELECIONADA-----\n")
+        num1= int(input("Digite o primeiro numero: "))
+        num2= int(input("Digite o segundo numero: "))
+        soma = num1 + num2
+        print(f"\nResultado= {soma}\n")
+    elif menu == 2:
+        print("\n----- SUBTRAÇÃO SELECIONADA-----\n")
+        num1= int(input("Digite o primeiro numero: "))
+        num2= int(input("Digite o segundo numero: "))
+        subtrair= num1 - num2
+        print(f"\nResultado= {subtrair}")
+    else:
+        print("FIM DO PROGRAMA")
+        break
