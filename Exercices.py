@@ -535,28 +535,45 @@
 
 #Adivinhação Simples: Defina um número secreto. O usuário deve tentar adivinhar; o programa avisa se o chute foi alto ou baixo até ele acertar.
 
-print("\n----- TENTE ADIVINHAR O NUMERO SECRETO-----\n")
+#print("\n----- TENTE ADIVINHAR O NUMERO SECRETO-----\n")
 
-secreto = 14
-num=""
-num= int(input("Digite um número de 0 a 100\nR: "))
+#secreto = 14
+#num=""
+#num= int(input("Digite um número de 0 a 100\nR: "))
 
-while num != secreto:
+#while num != secreto:
 
-    if num >=0 and num <=10:
-        num= int(input("Tente um numero mais alto!\nR: "))
-    elif num >=11 and num <=13 or num >=15 and num <=19:
-        num= int(input("Você está muito perto, tente de novo!\nR: "))
-    elif num >=20 and num <50:
-        num= int(input("Tente um numero mais baixo!\nR: "))
-    elif num >=50 and num <=100:
-        num= int(input("Você está longe, tente um número mais baixo!\nR: "))
-    elif num >100:
-        num= int(input("Digite um número de 0 a 100\nR: "))
-else:
-    print(f"Você encontrou o número secreto! ({secreto})")
+  #  if num >=0 and num <=10:
+  #      num= int(input("Tente um numero mais alto!\nR: "))
+  #  elif num >=11 and num <=13 or num >=15 and num <=19:
+  #      num= int(input("Você está muito perto, tente de novo!\nR: "))
+  #  elif num >=20 and num <50:
+ #       num= int(input("Tente um numero mais baixo!\nR: "))
+ #   elif num >=50 and num <=100:
+#        num= int(input("Você está longe, tente um número mais baixo!\nR: "))
+#    elif num >100:
+#        num= int(input("Digite um número de 0 a 100\nR: "))
+#else:
+#    print(f"Você encontrou o número secreto! ({secreto})")
+#
+ #-----------------------------------------------------------------------------------------------------------------
 
-    
+#População de Bactérias: Uma colônia dobra a cada hora. Começando com 1 bactéria, em quantas horas ela ultrapassará 1.000.000?
+
+
+bacterias= 1
+horas= 0
+print(f"hora: {horas}")
+print(f"bacterias: {bacterias}\n")
+
+while bacterias <1000000:
+    horas= horas + 1
+    bacterias= bacterias *2
+    print(f"horas: {horas}")
+    print(f"bacterias: {bacterias}\n")
+
+
+
     
     
 
