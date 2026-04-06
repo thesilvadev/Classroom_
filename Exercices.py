@@ -577,21 +577,42 @@
 #Média Indeterminada: Peça números ao usuário. Pare quando ele digitar
 #um número negativo. Ao final, mostre a média dos números positivos digitados  
   
-soma = 0
-contador = 0
+#soma = 0
+#contador = 0
 
 # Solicita o primeiro número
-num = int(input("Digite um número\nR: "))
+#num = int(input("Digite um número\nR: "))
 
 # O laço continua enquanto o número for positivo ou zero
-while num >= 0:
-    soma += num
-    contador += 1
-    num = int(input("Digite outro número\nR: "))
+#while num >= 0:
+   # soma += num
+  #  contador += 1
+ #   num = int(input("Digite outro número\nR: "))
 
 # Verifica se algum número positivo foi digitado para evitar divisão por zero
-if contador > 0:
-    media = soma / contador
-    print(f"FIM DO PROGRAMA\nA média dos números positivos foi: {media}")
-else:
-    print("FIM DO PROGRAMA\nNenhum número positivo foi digitado.")
+#if contador > 0:
+#    media = soma / contador
+#    print(f"FIM DO PROGRAMA\nA média dos números positivos foi: {media}")
+#else:
+#    print("FIM DO PROGRAMA\nNenhum número positivo foi digitado.")
+
+#------------------------------------------------------------------------------------------------
+
+#Caixa Eletrônico (Saque): Peça um valor de saque e informe quantas
+#notas de R$ 50,00 serão entregues (use apenas while e subtrações).
+
+nota = 50
+
+valor= int(input("Digite um valor de saque\nR: "))  
+
+while valor > 50:
+    valor -= nota
+    print(valor)
+
+
+while valor < 50:   
+    print("Desculpe, aceitamos apenas saques acima de R$100")
+    valor= int(input("\nDigite outro número\nR: "))
+
+
+
