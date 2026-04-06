@@ -601,18 +601,20 @@
 #Caixa Eletrônico (Saque): Peça um valor de saque e informe quantas
 #notas de R$ 50,00 serão entregues (use apenas while e subtrações).
 
-nota = 50
+# Caixa Eletrônico
+quantidade_notas = 0
 
-valor= int(input("Digite um valor de saque\nR: "))  
+valor = float(input("Digite um valor de saque (mínimo R$ 50)\nR: "))
 
-while valor > 50:
-    valor -= nota
-    print(valor)
+# WHILE 1: Enquanto o valor for menor que 50, ele 'prende' o usuário aqui
+while valor < 50:
+    print("Valor inválido para notas de R$ 50.")
+    valor = float(input("Digite um valor maior ou igual a 50\nR: "))
 
+# WHILE 2: Enquanto o valor for maior ou igual a 50, ele vai subtraindo
+while valor >= 50:
+    valor -= 50           # Subtração do montante
+    quantidade_notas += 1  # Soma no contador de notas
 
-while valor < 50:   
-    print("Desculpe, aceitamos apenas saques acima de R$100")
-    valor= int(input("\nDigite outro número\nR: "))
-
-
-
+print(f"Total de notas de R$ 50,00 entregues: {quantidade_notas}")
+print(f"Valor restante (miúdos): R$ {valor}")
