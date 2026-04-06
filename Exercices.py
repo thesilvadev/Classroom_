@@ -509,24 +509,56 @@
 #Menu de Calculadora: Exiba um menu: [1] Somar [2] Subtrair [0] Sair. 
 # O programa deve repetir até o usuário escolher 0
 
-while True:
-    print("\n-----MENU CALCULADORA-----\n")
+#while True:
+#    print("\n-----MENU CALCULADORA-----\n")
 
-    print("\nSomar [1]\nSubtrair [2]\nSair [0]\n")
+#    print("\nSomar [1]\nSubtrair [2]\nSair [0]\n")
 
-    menu= int(input("R: "))
-    if menu == 1:
-        print("\n----- SOMA SELECIONADA-----\n")
-        num1= int(input("Digite o primeiro numero: "))
-        num2= int(input("Digite o segundo numero: "))
-        soma = num1 + num2
-        print(f"\nResultado= {soma}\n")
-    elif menu == 2:
-        print("\n----- SUBTRAÇÃO SELECIONADA-----\n")
-        num1= int(input("Digite o primeiro numero: "))
-        num2= int(input("Digite o segundo numero: "))
-        subtrair= num1 - num2
-        print(f"\nResultado= {subtrair}")
-    else:
-        print("FIM DO PROGRAMA")
-        break
+#    menu= int(input("R: "))
+#    if menu == 1:
+#       print("\n----- SOMA SELECIONADA-----\n")
+#        num1= int(input("Digite o primeiro numero: "))
+#        num2= int(input("Digite o segundo numero: "))
+#        soma = num1 + num2
+#        print(f"\nResultado= {soma}\n")
+#   elif menu == 2:
+#        print("\n----- SUBTRAÇÃO SELECIONADA-----\n")
+#        num1= int(input("Digite o primeiro numero: "))
+#        num2= int(input("Digite o segundo numero: "))
+#       subtrair= num1 - num2
+#        print(f"\nResultado= {subtrair}")
+#    else:
+#        print("FIM DO PROGRAMA")
+#        break
+#
+#----------------------------------------------------------------------------------------------------------
+
+#Adivinhação Simples: Defina um número secreto. O usuário deve tentar adivinhar; o programa avisa se o chute foi alto ou baixo até ele acertar.
+
+print("\n----- TENTE ADIVINHAR O NUMERO SECRETO-----\n")
+
+secreto = 14
+num=""
+num= int(input("Digite um número de 0 a 100\nR: "))
+
+while num != secreto:
+
+    if num >=0 and num <=10:
+        num= int(input("Tente um numero mais alto!\nR: "))
+    elif num >=11 and num <=13 or num >=15 and num <=19:
+        num= int(input("Você está muito perto, tente de novo!\nR: "))
+    elif num >=20 and num <50:
+        num= int(input("Tente um numero mais baixo!\nR: "))
+    elif num >=50 and num <=100:
+        num= int(input("Você está longe, tente um número mais baixo!\nR: "))
+    elif num >100:
+        num= int(input("Digite um número de 0 a 100\nR: "))
+else:
+    print(f"Você encontrou o número secreto! ({secreto})")
+
+    
+    
+    
+
+
+
