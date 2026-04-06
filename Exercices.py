@@ -561,21 +561,37 @@
 #População de Bactérias: Uma colônia dobra a cada hora. Começando com 1 bactéria, em quantas horas ela ultrapassará 1.000.000?
 
 
-bacterias= 1
-horas= 0
-print(f"hora: {horas}")
-print(f"bacterias: {bacterias}\n")
+#bacterias= 1
+#horas= 0
+#print(f"hora: {horas}")
+#print(f"bacterias: {bacterias}\n")
 
-while bacterias <1000000:
-    horas= horas + 1
-    bacterias= bacterias *2
-    print(f"horas: {horas}")
-    print(f"bacterias: {bacterias}\n")
+#while bacterias <1000000:
+#    horas= horas + 1
+#    bacterias= bacterias *2
+#    print(f"horas: {horas}")
+#    print(f"bacterias: {bacterias}\n")
+#
+#------------------------------------------------------------------------------------------------------
 
+#Média Indeterminada: Peça números ao usuário. Pare quando ele digitar
+#um número negativo. Ao final, mostre a média dos números positivos digitados  
+  
+soma = 0
+contador = 0
 
+# Solicita o primeiro número
+num = int(input("Digite um número\nR: "))
 
-    
-    
+# O laço continua enquanto o número for positivo ou zero
+while num >= 0:
+    soma += num
+    contador += 1
+    num = int(input("Digite outro número\nR: "))
 
-
-
+# Verifica se algum número positivo foi digitado para evitar divisão por zero
+if contador > 0:
+    media = soma / contador
+    print(f"FIM DO PROGRAMA\nA média dos números positivos foi: {media}")
+else:
+    print("FIM DO PROGRAMA\nNenhum número positivo foi digitado.")
