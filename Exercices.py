@@ -602,19 +602,28 @@
 #notas de R$ 50,00 serão entregues (use apenas while e subtrações).
 
 # Caixa Eletrônico
-quantidade_notas = 0
+#quantidade_notas = 0
 
-valor = float(input("Digite um valor de saque (mínimo R$ 50)\nR: "))
+#valor = float(input("Digite um valor de saque (mínimo R$ 50)\nR: "))
 
 # WHILE 1: Enquanto o valor for menor que 50, ele 'prende' o usuário aqui
-while valor < 50:
-    print("Valor inválido para notas de R$ 50.")
-    valor = float(input("Digite um valor maior ou igual a 50\nR: "))
+#while valor < 50:
+ #   print("Valor inválido para notas de R$ 50.")
+ #   valor = float(input("Digite um valor maior ou igual a 50\nR: "))
 
 # WHILE 2: Enquanto o valor for maior ou igual a 50, ele vai subtraindo
-while valor >= 50:
-    valor -= 50           # Subtração do montante
-    quantidade_notas += 1  # Soma no contador de notas
+#while valor >= 50:
+#    valor -= 50           # Subtração do montante
+#    quantidade_notas += 1  # Soma no contador de notas
 
-print(f"Total de notas de R$ 50,00 entregues: {quantidade_notas}")
-print(f"Valor restante (miúdos): R$ {valor}")
+#print(f"Total de notas de R$ 50,00 entregues: {quantidade_notas}")
+#print(f"Valor restante: R$ {valor}")
+#--------------------------------------------------------------------------------------------------------
+
+#Validação de Cadastro: Peça Nome (mínimo 3 letras), Idade (0-120) e
+#Salário (>0). Repita o pedido para cada campo até que o dado seja válido
+
+nome= input("Digite seu nome: ")
+
+if nome == "   ":
+    print("Por favor, digite um nome com mais de 3 caracteres")
