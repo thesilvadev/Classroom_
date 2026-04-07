@@ -623,7 +623,23 @@
 #Validação de Cadastro: Peça Nome (mínimo 3 letras), Idade (0-120) e
 #Salário (>0). Repita o pedido para cada campo até que o dado seja válido
 
-nome= input("Digite seu nome: ")
+nome = input("Digite seu nome\nR: ").lower().strip()
 
-if nome == "   ":
-    print("Por favor, digite um nome com mais de 3 caracteres")
+while len(nome) <=3:
+    nome = input("Por favor, digite um nome com mais de 3 caracteres\nR: ").lower().strip()
+
+idade = int(input("Agora digite sua idade\nR: "))
+
+while idade <0 or idade > 120:
+    idade = int(input("Por favor, digite  uma idade de 0 a 120\nR: "))
+
+salario = float(input("Agora digite seu salário mensal\nR: "))
+
+while salario <0:
+    print("Por favor, coloque um salário acima de 0 reais")
+else:
+   print(f"\nCadastro realizado {nome}!\n")
+
+print("Fim do programa")
+
+
