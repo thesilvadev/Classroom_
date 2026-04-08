@@ -623,23 +623,60 @@
 #Validação de Cadastro: Peça Nome (mínimo 3 letras), Idade (0-120) e
 #Salário (>0). Repita o pedido para cada campo até que o dado seja válido
 
-nome = input("Digite seu nome\nR: ").lower().strip()
+#nome = input("Digite seu nome\nR: ").lower().strip()
 
-while len(nome) <=3:
-    nome = input("Por favor, digite um nome com mais de 3 caracteres\nR: ").lower().strip()
+#while len(nome) <=3:
+ #   nome = input("Por favor, digite um nome com mais de 3 caracteres\nR: ").lower().strip()
 
-idade = int(input("Agora digite sua idade\nR: "))
+#idade = int(input("Agora digite sua idade\nR: "))
 
-while idade <0 or idade > 120:
-    idade = int(input("Por favor, digite  uma idade de 0 a 120\nR: "))
+#while idade <0 or idade > 120:
+#    idade = int(input("Por favor, digite  uma idade de 0 a 120\nR: "))
 
-salario = float(input("Agora digite seu salário mensal\nR: "))
+#salario = float(input("Agora digite seu salário mensal\nR: "))
 
-while salario <0:
-    print("Por favor, coloque um salário acima de 0 reais")
-else:
-   print(f"\nCadastro realizado {nome}!\n")
+#while salario <0:
+#    print("Por favor, coloque um salário acima de 0 reais")
+#else:
+#   print(f"\nCadastro realizado {nome}!\n")
 
-print("Fim do programa")
+#print("Fim do programa")
+#
+#-------------------------------------------------------------------------------------------------------------------
 
+#Contagem Crescente: Imprima todos os números de 1 a 20.
+
+#for n in range(1, 21):
+#    print(n)
+#
+#------------------------------------------------------------------------------------------------------------------
+
+#Números Ímpares: Imprima todos os números ímpares entre 1 e 50
+
+#for n in range(1, 51):
+#    if n %2 != 0:
+#        print(n)
+#        
+#------------------------------------------------------------------------------------------------------------------
+
+#Tabuada Customizada: Peça um número ao usuário e exiba a tabuada dele de 1 a 10.
+
+num = int(input("Digite um numero para vizualizar tabuada\nR: "))
+
+for i in range(1, 11):
+    t= i * num
+    
+    print(f"{i} * {num} = {t}")
+
+
+#-----------------------------------------------------------------------------------------------------------------------
+
+#Somatório de Números  
+#Peça um número e calcule a soma de todos os números de 1 até ele.
+#soma = 0
+#num = int(input("Digite um numero: "))
+
+#for i in range(1, num + 1):
+#    soma += i 
+#    print(soma)
 
