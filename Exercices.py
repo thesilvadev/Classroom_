@@ -661,22 +661,38 @@
 
 #Tabuada Customizada: Peça um número ao usuário e exiba a tabuada dele de 1 a 10.
 
-num = int(input("Digite um numero para vizualizar tabuada\nR: "))
+#num = int(input("Digite um numero para vizualizar tabuada\nR: "))
 
-for i in range(1, 11):
-    t= i * num
-    
-    print(f"{i} * {num} = {t}")
+#for i in range(1, 11):
+#    t= i * num
+#
+#   print(f"{i} * {num} = {t}")
 
 
 #-----------------------------------------------------------------------------------------------------------------------
 
-#Somatório de Números  
-#Peça um número e calcule a soma de todos os números de 1 até ele.
-#soma = 0
-#num = int(input("Digite um numero: "))
+#Somatório Simples: Calcule a soma de todos os números de 1 a 100
 
-#for i in range(1, num + 1):
+#soma = 0
+
+#for i in range(1, 101):
 #    soma += i 
 #    print(soma)
+#
+#---------------------------------------------------------------------------------------------------------------------
+
+#Média de Temperaturas: Peça ao usuário 7 temperaturas
+#(uma para cada dia da semana) e exiba a média ao final.
+dias = ["Segunda-feira", "Terça-feira", "Quarta-feira", "Quinta-feira", "Sexta-feira", "Sábado", "Domingo"]
+
+soma = 0
+
+for dia in dias:
+    temp = int(input(f"\nDigite uma temperatura de {dia}: "))
+    soma += temp
+
+media = soma / 7
+
+print(f"\nA media da temperatura da semana é {media:.2f}")
+
 
