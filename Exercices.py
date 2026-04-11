@@ -683,16 +683,26 @@
 
 #Média de Temperaturas: Peça ao usuário 7 temperaturas
 #(uma para cada dia da semana) e exiba a média ao final.
-dias = ["Segunda-feira", "Terça-feira", "Quarta-feira", "Quinta-feira", "Sexta-feira", "Sábado", "Domingo"]
+#dias = ["Segunda-feira", "Terça-feira", "Quarta-feira", "Quinta-feira", "Sexta-feira", "Sábado", "Domingo"]
 
-soma = 0
+#soma = 0
 
-for dia in dias:
-    temp = int(input(f"\nDigite uma temperatura de {dia}: "))
-    soma += temp
+#for dia in dias:
+#   temp = int(input(f"\nDigite uma temperatura de {dia}: "))
+#    soma += temp
 
-media = soma / 7
+#media = soma / 7
 
-print(f"\nA media da temperatura da semana é {media:.2f}")
+#print(f"\nA media da temperatura da semana é {media:.2f}")
 
+#--------------------------------------------------------------------------------------------------------------------------
 
+#Fatorial (Introdução): Calcule o fatorial de um número inteiro positivo digitado pelo usuário (ex: 5! = 120)
+
+numero = int(input("Digite um numero: "))
+contador = 1
+
+for n in range(1, numero +1):
+    contador = contador * n
+    
+    print(f"{n}! = {contador}")
