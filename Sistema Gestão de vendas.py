@@ -1,13 +1,11 @@
 print("\n------SISTEMA DE GESTÃO DE VENDAS MENSAIS------\n")
 
 
-nome_gestor = input("\nDigite o nome do gestor: ")
+nome_gestor = input("\nDigite o nome do gestor: ").capitalize()
 
 mes_referencia = input("\nDigite o mês de referência: ").upper()
 
-meses = ["JANEIRO", "FEVEREIRO", "MARÇO", "ABRIL", "MAIO", "JUNHO", "JULHO", "AGOSTO", "SETEMBRO"]
-
-while mes_referencia != "JANEIRO" and mes_referencia != "FEVEREIRO":
+while mes_referencia != "JANEIRO" and "FEVEREIRO" and "MARÇO":#mes_referencia #!= "FEVEREIRO" and mes_referencia != "MARÇO" and mes_referencia != "ABRIL" and mes_referencia !=  "MAIO" and mes_referencia != :
     print("mês inválido!")
     mes_referencia = input("\nDigite o mês de referência: ").upper()
 else:
