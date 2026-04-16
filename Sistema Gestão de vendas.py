@@ -1,5 +1,7 @@
 print("\n------SISTEMA DE GESTÃO DE VENDAS MENSAIS------\n")
 
+soma = 0
+
 
 nome_gestor = input("\nDigite o nome do gestor: ").capitalize()
 
@@ -11,15 +13,21 @@ while mes != "JANEIRO" and  mes != "FEVEREIRO" and mes != "MARÇO" and  mes != "
 else:
     dias_venda = int(input(f"\nQuantos dias de venda serão registrados em {mes}: "))
 
-soma = 0
+while dias_venda >= 32:
 
-for d in range(1, dias_venda+1):
+    dias_venda = int(input(f"\nPor favor, digite um dia válido para o mes de {mes}: "))
 
-    valor_vendido = float(input(f"\nDigite o valor vendido do {d}° dia : R$"))
+else:
+    for d in range(1, dias_venda+1):
 
-    soma = soma + valor_vendido
+        valor_vendido = float(input(f"\nDigite o valor vendido do {d}° dia : R$"))
 
-print(f"A soma das vendas do mes de {mes} é de R${soma:.2f}")
+        soma = soma + valor_vendido
+
+
+media = soma / d
+
+print(f"\nA soma das vendas do mes de {mes} é de R$ {soma:.2f}")
     
 
 
