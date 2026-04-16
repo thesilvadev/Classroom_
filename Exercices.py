@@ -728,3 +728,20 @@
 #print(f"\nA média das notas foi {media}!")
 #print(f"Teve {contador} notas acima de 7.0!")
 
+#--------------------------------------------------------------------------------------------------------------
+
+#Escreva um código usando input e atribuindo o resultado a uma variável. Não esqueça de
+#fazer o casting para um valor numérico corretamente. Escreva um comentário explicando o
+#que foi feito e o porquê
+
+#Aqui foi usado a string como imput.Pois iremos coletar o nome do usuario
+nome = input("Digite seu nome: ")
+
+#Aqui foi usado o int no input. Atribuindo a variavel idade como um numero inteiro
+idade = int(input("Digite sua idade: "))
+
+#Foi usado como float pois é um numero real, ou seja, um numero com virgula (casas decimais)
+dinheiro = float(input("Digite quantos reais você tem: R$"))
+
+#O emprestimo foi atribuido o valor "True" 
+emprestimo = True

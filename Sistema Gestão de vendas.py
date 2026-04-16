@@ -27,6 +27,9 @@ else:
 
 media = soma / d
 
+
+
+
 print(f"\nA soma das vendas do mes de {mes} é de R$ {soma:.2f}")
     
 
