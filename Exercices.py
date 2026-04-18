@@ -735,13 +735,165 @@
 #que foi feito e o porquê
 
 #Aqui foi usado a string como imput.Pois iremos coletar o nome do usuario
-nome = input("Digite seu nome: ")
+#nome = input("Digite seu nome: ")
 
 #Aqui foi usado o int no input. Atribuindo a variavel idade como um numero inteiro
-idade = int(input("Digite sua idade: "))
+#idade = int(input("Digite sua idade: "))
 
 #Foi usado como float pois é um numero real, ou seja, um numero com virgula (casas decimais)
-dinheiro = float(input("Digite quantos reais você tem: R$"))
+#dinheiro = float(input("Digite quantos reais você tem: R$"))
 
 #O emprestimo foi atribuido o valor "True" 
-emprestimo = True
+#emprestimo = True
+
+#----------------------------------------------------------------------------------------------------------------------------------------
+import random  
+
+  
+
+#for numero in range(5):  
+
+#    numero = random.randint(1, 6)  
+
+#print(f"Dado: {numero}")  
+
+  
+
+  
+
+  
+
+#v1 Modifique o codigo para que ele jogue 2 dados por 10x seguidos  
+
+  
+
+#for rodada in range(10):  
+
+#    dado1 = random.randint(1, 6)  
+
+#    dado2 = random.randint(1, 6)  
+
+#    print(f"Dado 1: {dado1}\nDado 2: {dado2}\n")  
+
+#print("\n---FIM DO PROGRAMA---\n")  
+
+  
+
+#v2 Conte quantas vezes os dados deram numeros iguais : ex.. 2 2 , 6 6 etc...  
+
+  
+
+#contagem = 0  
+
+  
+
+#for rodada in range(10):  
+
+#    dado1 = random.randint(1, 6)  
+
+#   dado2 = random.randint(1, 6)  
+
+#    if dado1 == dado2:  
+
+#        contagem = contagem + 1  
+
+         
+
+#    print(f"Dado 1: {dado1}\nDado 2: {dado2}\n")  
+
+#print(f"Os dados se repetiram {contagem} vezes")  
+
+  
+
+#print("\n---FIM DO PROGRAMA---\n")  
+
+  
+
+#v3 Faça o programa parar de jogar os dados se for detectado "Dados iguais"  
+
+  
+
+#contagem = 0  
+
+  
+
+#for rodada in range(10):  
+
+#    dado1 = random.randint(1, 6)  
+
+#    dado2 = random.randint(1, 6)  
+
+#    if dado1 == dado2:  
+
+#        contagem = contagem +1  
+
+#        print(f"Dado 1: {dado1}\nDado 2: {dado2}")  
+
+#        print("Dados iguais\n")  
+
+#        break  
+
+         
+
+#    print(f"Dado 1: {dado1}\nDado 2: {dado2}\n")  
+
+#print(f"Os dados se repetiram {contagem} vezes antes de parar")  
+
+#print("\n---FIM DO PROGRAMA---\n")  
+
+  
+#------------------------------------------------------------------------------------------
+  
+
+  
+
+# Jogo jokey po  
+
+  
+#1 = "pedra"  
+
+#2 = "papel"  
+
+#3 = "tesoura"  
+
+  
+
+print("\n----- Jokey Po -----\n")  
+
+  
+
+player = input("Tente me vencer! \nPedra "✊" Papel "✋" Tesoura "✌️"\n\nR: ")     
+
+tipo = "✊" or "✋" or "✌️"  
+
+for pc in range(1):  
+
+    pc = random.choice(tipo)  
+
+  
+
+    #1 = "✊"  
+
+    #2 = "✋"  
+
+    #3 = "✌️"  
+
+  
+
+    if player == "✊" and pc == "✊" or player == "✋" and pc == "✋" or player == "✌️" and pc =="✌️":  
+
+        print(f"{player} x {pc}\nO jogo empatou!")  
+
+  
+
+    elif player == "✊" and pc == "✌️" or player == "✋" and pc == "✊" or player == "✌️" and pc == "✋":  
+
+        print(f"{player} x {pc}\nO jogador ganhou!")  
+
+  
+
+    elif player == "✌️" and pc == "✊" or player == "✊" and pc == "✋" or player == "✋" and pc == "✌️":    
+
+        print(f"{player} x {pc}\nO pc ganhou")
+        
+        
