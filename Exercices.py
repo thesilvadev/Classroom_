@@ -626,7 +626,7 @@
 #nome = input("Digite seu nome\nR: ").lower().strip()
 
 #while len(nome) <=3:
- #   nome = input("Por favor, digite um nome com mais de 3 caracteres\nR: ").lower().strip()
+#   nome = input("Por favor, digite um nome com mais de 3 caracteres\nR: ").lower().strip()
 
 #idade = int(input("Agora digite sua idade\nR: "))
 
@@ -711,19 +711,37 @@
 
 #Análise de Notas: Peça 5 notas. Calcule a média e informe quantas notas foram acima de 7.0
 #Define o valor de 0 para atribuir o valor da nota anterior e somar depois
-soma = 0
-contador = 0
+#soma = 0
+#contador = 0
 
-for n in range(1, 6):
-    nota = float(input(f"Digite a {n}° nota: "))
+#for n in range(1, 6):
+#    nota = float(input(f"Digite a {n}° nota: "))
 
-    soma = soma + nota
+#    soma = soma + nota
 
-    if nota >= 7:
-        nota = contador
-        contador = contador + 1
+#    if nota >= 7:
+#        nota = contador
+#        contador = contador + 1
 
-media = soma / 5
+#media = soma / 5
 
-print(f"\nA média das notas foi {media}!")
-print(f"Teve {contador} notas acima de 7.0!")
+#print(f"\nA média das notas foi {media}!")
+#print(f"Teve {contador} notas acima de 7.0!")
+
+#--------------------------------------------------------------------------------------------------------------
+
+#Escreva um código usando input e atribuindo o resultado a uma variável. Não esqueça de
+#fazer o casting para um valor numérico corretamente. Escreva um comentário explicando o
+#que foi feito e o porquê
+
+#Aqui foi usado a string como imput.Pois iremos coletar o nome do usuario
+nome = input("Digite seu nome: ")
+
+#Aqui foi usado o int no input. Atribuindo a variavel idade como um numero inteiro
+idade = int(input("Digite sua idade: "))
+
+#Foi usado como float pois é um numero real, ou seja, um numero com virgula (casas decimais)
+dinheiro = float(input("Digite quantos reais você tem: R$"))
+
+#O emprestimo foi atribuido o valor "True" 
+emprestimo = True
