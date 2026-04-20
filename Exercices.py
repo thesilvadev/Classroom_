@@ -881,54 +881,126 @@ import random
 
 #Jogo jokeyPô, pc contra player:
 
+#print(f"\n----- JokeyPô -----\n")
+
+#for rodada in range(1):
+
+#    pc = random.randint(1, 3)
+
+#    if pc == 1:
+#        pc = "✊"
+#    elif pc == 2:
+#        pc = "✋"
+#    elif pc == 3:
+#        pc = "✌️"
+
+#    player = int(input("Tente me vencer 🤖!\n\nPedra [1] Papel [2] Tesoura [3]\nR: "))
+
+#    if player == 1:
+#        player = "✊"
+#    elif player == 2:
+#        player = "✋"
+#    elif player == 3:
+#        player = "✌️"
+
+
+#if pc == "✊" and player == "✊":
+#    print(f"\nPlayer: {player} \nPc: {pc}\n\nEmpate!")
+#elif pc == "✋" and player == "✋":
+#    print(f"\nPlayer: {player} \nPc: {pc}\n\nEmpate!")
+#elif pc == "✌️" and player == "✌️":
+#    print(f"\nPlayer: {player} \nPc: {pc}\n\nEmpate!")
+
+
+
+#if pc == "✊" and player == "✌️":
+#    print(f"\nPlayer: {player} \nPc: {pc}\n\nO 🤖 venceu!")
+#elif pc == "✋" and player == "✊":
+#    print(f"\nPlayer: {player} \nPc: {pc}\n\nO 🤖 venceu!")
+#elif pc == "✌️" and player == "✋":
+#    print(f"\nPlayer: {player} \nPc: {pc}\n\nO 🤖 venceu!")
+
+
+
+#if pc == "✌️" and player == "✊":
+#    print(f"\nPlayer: {player} \nPc: {pc}\n\nO Player venceu!") 
+#elif pc == "✊" and player == "✋":
+#    print(f"\nPlayer: {player} \nPc: {pc}\n\nO Player venceu!") 
+#elif pc == "✋" and player == "✌️":
+#    print(f"\nPlayer: {player} \nPc: {pc}\n\nO Player venceu!") 
+    
+#print("\n----- FIM DO PROGRAMA -----\n")
+
+
+#-----------------------------------------------------------------------------------------
+
 print(f"\n----- JokeyPô -----\n")
 
-for rodada in range(1):
+play_again = "s"
 
-    pc = random.randint(1, 3)
+while play_again == "s":
 
-    if pc == 1:
-        pc = "✊"
-    elif pc == 2:
-        pc = "✋"
-    elif pc == 3:
-        pc = "✌️"
+    for rodada in range(1):
 
-    player = int(input("Tente me vencer 🤖!\n\nPedra [1] Papel [2] Tesoura [3]\nR: "))
+        pc = random.randint(1, 3)
 
-    if player == 1:
-        player = "✊"
-    elif player == 2:
-        player = "✋"
-    elif player == 3:
-        player = "✌️"
+        if pc == 1:
+            pc = "✊"
+        elif pc == 2:
+            pc = "✋"
+        elif pc == 3:
+            pc = "✌️"
 
+        player = int(input("\nTente me vencer 🤖!\n\nPedra [1] Papel [2] Tesoura [3]\nR: "))
 
-if pc == "✊" and player == "✊":
-    print(f"\nPlayer: {player} \nPc: {pc}\n\nEmpate!")
-elif pc == "✋" and player == "✋":
-    print(f"\nPlayer: {player} \nPc: {pc}\n\nEmpate!")
-elif pc == "✌️" and player == "✌️":
-    print(f"\nPlayer: {player} \nPc: {pc}\n\nEmpate!")
+        if player == 1:
+            player = "✊"
+        elif player == 2:
+            player = "✋"
+        elif player == 3:
+            player = "✌️"
 
 
-
-if pc == "✊" and player == "✌️":
-    print(f"\nPlayer: {player} \nPc: {pc}\n\nO 🤖 venceu!")
-elif pc == "✋" and player == "✊":
-    print(f"\nPlayer: {player} \nPc: {pc}\n\nO 🤖 venceu!")
-elif pc == "✌️" and player == "✋":
-    print(f"\nPlayer: {player} \nPc: {pc}\n\nO 🤖 venceu!")
+    if pc == "✊" and player == "✊":
+        print(f"\nPlayer: {player} \nPc: {pc}\n\nEmpate!")
+    elif pc == "✋" and player == "✋":
+        print(f"\nPlayer: {player} \nPc: {pc}\n\nEmpate!")
+    elif pc == "✌️" and player == "✌️":
+        print(f"\nPlayer: {player} \nPc: {pc}\n\nEmpate!")
 
 
 
-if pc == "✌️" and player == "✊":
-    print(f"\nPlayer: {player} \nPc: {pc}\n\nO Player venceu!") 
-elif pc == "✊" and player == "✋":
-    print(f"\nPlayer: {player} \nPc: {pc}\n\nO Player venceu!") 
-elif pc == "✋" and player == "✌️":
-    print(f"\nPlayer: {player} \nPc: {pc}\n\nO Player venceu!") 
+    if pc == "✊" and player == "✌️":
+        print(f"\nPlayer: {player} \nPc: {pc}\n\nO 🤖 venceu!")
+    elif pc == "✋" and player == "✊":
+        print(f"\nPlayer: {player} \nPc: {pc}\n\nO 🤖 venceu!")
+    elif pc == "✌️" and player == "✋":
+        print(f"\nPlayer: {player} \nPc: {pc}\n\nO 🤖 venceu!")
+
+
+
+    if pc == "✌️" and player == "✊":
+        print(f"\nPlayer: {player} \nPc: {pc}\n\nO Player venceu!") 
+    elif pc == "✊" and player == "✋":
+        print(f"\nPlayer: {player} \nPc: {pc}\n\nO Player venceu!") 
+    elif pc == "✋" and player == "✌️":
+        print(f"\nPlayer: {player} \nPc: {pc}\n\nO Player venceu!") 
     
-print("\n----- FIM DO PROGRAMA -----\n")
+    print("\n----- FIM DA RODADA -----\n")
+
+    play_again = input("\nDeseja jogar novamente? [s/n]\nR: ")
+
+    while play_again != "s":
+    
+        print("Por favor, digite uma opção valida!")
+        play_again = input("\nDeseja jogar novamente? [s/n]\nR: ")
+
+        if play_again == "n":
+            print("\n----- FIM DO PROGRAMA -----\n")
+            break
+
+    
+
+
 
 
