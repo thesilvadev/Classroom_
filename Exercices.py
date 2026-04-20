@@ -932,6 +932,3 @@ elif pc == "✋" and player == "✌️":
 print("\n----- FIM DO PROGRAMA -----\n")
 
 
-
-        
-
