@@ -934,72 +934,178 @@ import random
 
 #-----------------------------------------------------------------------------------------
 
-print(f"\n----- JokeyPô -----\n")
+#V 1.1 - Play again [s/n]
 
-play_again = "s"
+#print(f"\n----- JokeyPô -----\n") # Titulo do Jogo!
 
-while play_again == "s":
+#play_again = "s" # Definindo o valor que sera atribuido no while
 
-    for rodada in range(1):
+#while play_again == "s": # Definindo o laço de repetição do Play Again
 
-        pc = random.randint(1, 3)
+#    for rodada in range(1): # Jogo tera apenas 1 rodada [range(1)]
+
+#        pc = random.randint(1, 3) # Aqui é onde o Pc irá escolher entre: Pedra, Papel ou Tesoura (aleatoriamente)
+
+#        if pc == 1:
+#            pc = "✊" # Definindo como o numero 1 será representado no jogo
+#        elif pc == 2:
+#            pc = "✋" # Definindo como o numero 2 será representado no jogo
+#        elif pc == 3:
+#            pc = "✌️" # Definindo como o numero 3 será representado no jogo
+
+#        player = int(input("\nTente me vencer 🤖!\n\nPedra [1] Papel [2] Tesoura [3]\nR: ")) # Aqui é onde o jogador vai escolher entre: Pedra, Papel ou Tesoura
+
+#        if player == 1:
+#            player = "✊" # Definindo como o numero 1 será representado no jogo
+#        elif player == 2:
+#            player = "✋" # Definindo como o numero 2 será representado no jogo
+#        elif player == 3:
+#            player = "✌️" # Definindo como o numero 3 será representado no jogo
+
+
+#    if pc == "✊" and player == "✊":
+#        print(f"\nPlayer: {player} \nPc: {pc}\n\nEmpate!")
+#    elif pc == "✋" and player == "✋":
+#        print(f"\nPlayer: {player} \nPc: {pc}\n\nEmpate!")
+#    elif pc == "✌️" and player == "✌️":
+#        print(f"\nPlayer: {player} \nPc: {pc}\n\nEmpate!")
+# Usando comparações para definir empate do jogo!
+
+
+#    if pc == "✊" and player == "✌️":
+#        print(f"\nPlayer: {player} \nPc: {pc}\n\nO 🤖 venceu!")
+#    elif pc == "✋" and player == "✊":
+#        print(f"\nPlayer: {player} \nPc: {pc}\n\nO 🤖 venceu!")
+#    elif pc == "✌️" and player == "✋":
+#        print(f"\nPlayer: {player} \nPc: {pc}\n\nO 🤖 venceu!")
+# Usando comparação para definir o ganhador do Jogo (PC)
+
+
+#    if pc == "✌️" and player == "✊":
+#        print(f"\nPlayer: {player} \nPc: {pc}\n\nO Player venceu!") 
+#    elif pc == "✊" and player == "✋":
+#        print(f"\nPlayer: {player} \nPc: {pc}\n\nO Player venceu!") 
+#   elif pc == "✋" and player == "✌️":
+#        print(f"\nPlayer: {player} \nPc: {pc}\n\nO Player venceu!") 
+# Usando comparação para definir o ganhador do Jogo (PLAYER)    
+
+
+#    print("\n----- FIM DA RODADA -----\n") # Final da rodada
+
+#    play_again = input("\nDeseja jogar novamente? [s/n]\nR: ") # Variavel para reiniciar o Play Again
+#
+#    while play_again != "s": # Caso o player coloque qualquer caracter difirete de "s" ou "n"
+#    
+#        print("Por favor, digite uma opção valida!") # Mensagem de caracter invalido!
+#        play_again = input("\nDeseja jogar novamente? [s/n]\nR: ") # variavel para voltar para o primeiro laço de repetição caso a resposta seja "s"
+
+#       if play_again == "n": #Caso a resposta seja "n" o programa encerra
+#            print("\n----- FIM DO PROGRAMA -----\n")
+#            break # Break para interromper o laço!
+
+#------------------------------------------------------------------------------------------------------
+       
+#V.3 - Implemente um placar!
+
+print(f"\n----- JokeyPô -----\n") # Titulo do Jogo!
+
+pc_venceu = 0
+player_v = 0
+
+
+play_again = "s" # Definindo o valor que sera atribuido no while
+
+while play_again == "s": # Definindo o laço de repetição do Play Again
+
+    for rodada in range(1): # Jogo tera apenas 1 rodada [range(1)]
+
+        pc = random.randint(1, 3) # Aqui é onde o Pc irá escolher entre: Pedra, Papel ou Tesoura (aleatoriamente)
 
         if pc == 1:
-            pc = "✊"
+            pc = "✊" # Definindo como o numero 1 será representado no jogo
         elif pc == 2:
-            pc = "✋"
+            pc = "✋" # Definindo como o numero 2 será representado no jogo
         elif pc == 3:
-            pc = "✌️"
+            pc = "✌️" # Definindo como o numero 3 será representado no jogo
 
-        player = int(input("\nTente me vencer 🤖!\n\nPedra [1] Papel [2] Tesoura [3]\nR: "))
+        player = int(input("\nTente me vencer 🤖!\n\nPedra [1] Papel [2] Tesoura [3]\nR: ")) # Aqui é onde o jogador vai escolher entre: Pedra, Papel ou Tesoura
+
+        while player <= 0 or player >= 4:
+            print("\nPor favor selecione uma das opções válidas!")
+            player = int(input("\nTente me vencer 🤖!\n\nPedra [1] Papel [2] Tesoura [3]\nR: "))
 
         if player == 1:
-            player = "✊"
+            player = "✊" # Definindo como o numero 1 será representado no jogo
         elif player == 2:
-            player = "✋"
+            player = "✋" # Definindo como o numero 2 será representado no jogo
         elif player == 3:
-            player = "✌️"
+            player = "✌️" # Definindo como o numero 3 será representado no jogo
 
-
+    
     if pc == "✊" and player == "✊":
         print(f"\nPlayer: {player} \nPc: {pc}\n\nEmpate!")
+        print(f"\nPlacar do jogo: [Empate]")
     elif pc == "✋" and player == "✋":
         print(f"\nPlayer: {player} \nPc: {pc}\n\nEmpate!")
+        print(f"\nPlacar do jogo: [Empate]")
     elif pc == "✌️" and player == "✌️":
         print(f"\nPlayer: {player} \nPc: {pc}\n\nEmpate!")
+        print(f"\nPlacar do jogo: [Empate]")
 
-
+# Usando comparações para definir empate do jogo!
 
     if pc == "✊" and player == "✌️":
         print(f"\nPlayer: {player} \nPc: {pc}\n\nO 🤖 venceu!")
+        pc_venceu = pc_venceu + 1
+        player_v = player_v
+        print(f"\nPlacar do jogo: {player_v}] x [{pc_venceu}]")
     elif pc == "✋" and player == "✊":
         print(f"\nPlayer: {player} \nPc: {pc}\n\nO 🤖 venceu!")
+        pc_venceu = pc_venceu + 1
+        player_v = player_v
+        print(f"\nPlacar do jogo: [{player_v}] x [{pc_venceu}]")
     elif pc == "✌️" and player == "✋":
         print(f"\nPlayer: {player} \nPc: {pc}\n\nO 🤖 venceu!")
+        pc_venceu = pc_venceu + 1
+        player_v = player_v
+        print(f"\nPlacar do jogo: [{player_v}] x [{pc_venceu}]")
 
-
-
+# Usando comparação para definir o ganhador do Jogo (PC)
+    
     if pc == "✌️" and player == "✊":
-        print(f"\nPlayer: {player} \nPc: {pc}\n\nO Player venceu!") 
+        print(f"\nPlayer: {player} \nPc: {pc}\n\nO Player venceu!")
+        player_v = player_v + 1
+        pc_venceu = pc_venceu
+        print(f"\nPlacar do jogo: [{player_v}] x [{pc_venceu}]")
     elif pc == "✊" and player == "✋":
-        print(f"\nPlayer: {player} \nPc: {pc}\n\nO Player venceu!") 
+        print(f"\nPlayer: {player} \nPc: {pc}\n\nO Player venceu!")
+        player_v = player_v + 1
+        pc_venceu = pc_venceu
+        print(f"\nPlacar do jogo: [{player_v}] x [{pc_venceu}]")
     elif pc == "✋" and player == "✌️":
-        print(f"\nPlayer: {player} \nPc: {pc}\n\nO Player venceu!") 
+        print(f"\nPlayer: {player} \nPc: {pc}\n\nO Player venceu!")
+        player_v = player_v + 1
+        pc_venceu = pc_venceu
+        print(f"\nPlacar do jogo: [{player_v}] x [{pc_venceu}]") 
+           
+# Usando comparação para definir o ganhador do Jogo (PLAYER)
+
     
-    print("\n----- FIM DA RODADA -----\n")
 
-    play_again = input("\nDeseja jogar novamente? [s/n]\nR: ")
+    print("\n----- FIM DA RODADA -----\n") # Final da rodada
 
-    while play_again != "s":
+    play_again = input("\nDeseja jogar novamente? [s/n]\nR: ") # Variavel para reiniciar o Play Again
+
+    while play_again != "s": # Caso o player coloque qualquer caracter difirete de "s" ou "n"
     
-        print("Por favor, digite uma opção valida!")
-        play_again = input("\nDeseja jogar novamente? [s/n]\nR: ")
+        print("Por favor, digite uma opção valida!") # Mensagem de caracter invalido!
+        play_again = input("\nDeseja jogar novamente? [s/n]\nR: ") # variavel para voltar para o primeiro laço de repetição caso a resposta seja "s"
 
-        if play_again == "n":
+        if play_again == "n": #Caso a resposta seja "n" o programa encerra
             print("\n----- FIM DO PROGRAMA -----\n")
-            break
+            break # Break para interromper o laço!       
 
-    
+
 
 
 
