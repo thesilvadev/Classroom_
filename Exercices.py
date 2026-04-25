@@ -1007,103 +1007,170 @@ import random
        
 #V.3 - Implemente um placar!
 
-print(f"\n----- JokeyPô -----\n") # Titulo do Jogo!
+#print(f"\n----- JokeyPô -----\n") # Titulo do Jogo!
 
-pc_venceu = 0
-player_v = 0
+#pc_venceu = 0
+#player_v = 0
 
 
-play_again = "s" # Definindo o valor que sera atribuido no while
+#play_again = "s" # Definindo o valor que sera atribuido no while
 
-while play_again == "s": # Definindo o laço de repetição do Play Again
+#while play_again == "s": # Definindo o laço de repetição do Play Again
 
-    for rodada in range(1): # Jogo tera apenas 1 rodada [range(1)]
+#    for rodada in range(1): # Jogo tera apenas 1 rodada [range(1)]
 
-        pc = random.randint(1, 3) # Aqui é onde o Pc irá escolher entre: Pedra, Papel ou Tesoura (aleatoriamente)
+#        pc = random.randint(1, 3) # Aqui é onde o Pc irá escolher entre: Pedra, Papel ou Tesoura (aleatoriamente)
 
-        if pc == 1:
-            pc = "✊" # Definindo como o numero 1 será representado no jogo
-        elif pc == 2:
-            pc = "✋" # Definindo como o numero 2 será representado no jogo
-        elif pc == 3:
-            pc = "✌️" # Definindo como o numero 3 será representado no jogo
+#        if pc == 1:
+#            pc = "✊" # Definindo como o numero 1 será representado no jogo
+#        elif pc == 2:
+#            pc = "✋" # Definindo como o numero 2 será representado no jogo
+#        elif pc == 3:
+#            pc = "✌️" # Definindo como o numero 3 será representado no jogo
 
-        player = int(input("\nTente me vencer 🤖!\n\nPedra [1] Papel [2] Tesoura [3]\nR: ")) # Aqui é onde o jogador vai escolher entre: Pedra, Papel ou Tesoura
+#        player = int(input("\nTente me vencer 🤖!\n\nPedra [1] Papel [2] Tesoura [3]\nR: ")) # Aqui é onde o jogador vai escolher entre: Pedra, Papel ou Tesoura
 
-        while player <= 0 or player >= 4:
-            print("\nPor favor selecione uma das opções válidas!")
-            player = int(input("\nTente me vencer 🤖!\n\nPedra [1] Papel [2] Tesoura [3]\nR: "))
+#        while player <= 0 or player >= 4:
+#            print("\nPor favor selecione uma das opções válidas!")
+#            player = int(input("\nTente me vencer 🤖!\n\nPedra [1] Papel [2] Tesoura [3]\nR: "))#
 
-        if player == 1:
-            player = "✊" # Definindo como o numero 1 será representado no jogo
-        elif player == 2:
-            player = "✋" # Definindo como o numero 2 será representado no jogo
-        elif player == 3:
-            player = "✌️" # Definindo como o numero 3 será representado no jogo
+#        if player == 1:
+#            player = "✊" # Definindo como o numero 1 será representado no jogo
+#        elif player == 2:
+#            player = "✋" # Definindo como o numero 2 será representado no jogo
+#        elif player == 3:
+#            player = "✌️" # Definindo como o numero 3 será representado no jogo
 
-    
-    if pc == "✊" and player == "✊":
-        print(f"\nPlayer: {player} \nPc: {pc}\n\nEmpate!")
-        print(f"\nPlacar do jogo: [Empate]")
-    elif pc == "✋" and player == "✋":
-        print(f"\nPlayer: {player} \nPc: {pc}\n\nEmpate!")
-        print(f"\nPlacar do jogo: [Empate]")
-    elif pc == "✌️" and player == "✌️":
-        print(f"\nPlayer: {player} \nPc: {pc}\n\nEmpate!")
-        print(f"\nPlacar do jogo: [Empate]")
+#   
+#    if pc == "✊" and player == "✊":
+#        print(f"\nPlayer: {player} \nPc: {pc}\n\nEmpate!")
+#        print(f"\nPlacar do jogo: [Empate]")
+##   elif pc == "✋" and player == "✋":
+#        print(f"\nPlayer: {player} \nPc: {pc}\n\nEmpate!")
+#        print(f"\nPlacar do jogo: [Empate]")
+#    elif pc == "✌️" and player == "✌️":
+#        print(f"\nPlayer: {player} \nPc: {pc}\n\nEmpate!")
+#        print(f"\nPlacar do jogo: [Empate]")
 
 # Usando comparações para definir empate do jogo!
 
-    if pc == "✊" and player == "✌️":
-        print(f"\nPlayer: {player} \nPc: {pc}\n\nO 🤖 venceu!")
-        pc_venceu = pc_venceu + 1
-        player_v = player_v
-        print(f"\nPlacar do jogo: {player_v}] x [{pc_venceu}]")
-    elif pc == "✋" and player == "✊":
-        print(f"\nPlayer: {player} \nPc: {pc}\n\nO 🤖 venceu!")
-        pc_venceu = pc_venceu + 1
-        player_v = player_v
-        print(f"\nPlacar do jogo: [{player_v}] x [{pc_venceu}]")
-    elif pc == "✌️" and player == "✋":
-        print(f"\nPlayer: {player} \nPc: {pc}\n\nO 🤖 venceu!")
-        pc_venceu = pc_venceu + 1
-        player_v = player_v
-        print(f"\nPlacar do jogo: [{player_v}] x [{pc_venceu}]")
+#    if pc == "✊" and player == "✌️":
+#        print(f"\nPlayer: {player} \nPc: {pc}\n\nO 🤖 venceu!")
+#        pc_venceu = pc_venceu + 1
+#        player_v = player_v
+#        print(f"\nPlacar do jogo: {player_v}] x [{pc_venceu}]")
+#    elif pc == "✋" and player == "✊":
+#        print(f"\nPlayer: {player} \nPc: {pc}\n\nO 🤖 venceu!")
+#       pc_venceu = pc_venceu + 1
+#        player_v = player_v
+#        print(f"\nPlacar do jogo: [{player_v}] x [{pc_venceu}]")
+#    elif pc == "✌️" and player == "✋":
+#        print(f"\nPlayer: {player} \nPc: {pc}\n\nO 🤖 venceu!")
+#        pc_venceu = pc_venceu + 1
+#        player_v = player_v
+#        print(f"\nPlacar do jogo: [{player_v}] x [{pc_venceu}]")
 
 # Usando comparação para definir o ganhador do Jogo (PC)
     
-    if pc == "✌️" and player == "✊":
-        print(f"\nPlayer: {player} \nPc: {pc}\n\nO Player venceu!")
-        player_v = player_v + 1
-        pc_venceu = pc_venceu
-        print(f"\nPlacar do jogo: [{player_v}] x [{pc_venceu}]")
-    elif pc == "✊" and player == "✋":
-        print(f"\nPlayer: {player} \nPc: {pc}\n\nO Player venceu!")
-        player_v = player_v + 1
-        pc_venceu = pc_venceu
-        print(f"\nPlacar do jogo: [{player_v}] x [{pc_venceu}]")
-    elif pc == "✋" and player == "✌️":
-        print(f"\nPlayer: {player} \nPc: {pc}\n\nO Player venceu!")
-        player_v = player_v + 1
-        pc_venceu = pc_venceu
-        print(f"\nPlacar do jogo: [{player_v}] x [{pc_venceu}]") 
+#    if pc == "✌️" and player == "✊":
+#        print(f"\nPlayer: {player} \nPc: {pc}\n\nO Player venceu!")
+#        player_v = player_v + 1
+#        pc_venceu = pc_venceu
+#       print(f"\nPlacar do jogo: [{player_v}] x [{pc_venceu}]")
+#    elif pc == "✊" and player == "✋":
+#        print(f"\nPlayer: {player} \nPc: {pc}\n\nO Player venceu!")
+#        player_v = player_v + 1
+#        pc_venceu = pc_venceu
+#        print(f"\nPlacar do jogo: [{player_v}] x [{pc_venceu}]")
+#   elif pc == "✋" and player == "✌️":
+#        print(f"\nPlayer: {player} \nPc: {pc}\n\nO Player venceu!")
+#        player_v = player_v + 1
+#        pc_venceu = pc_venceu
+#        print(f"\nPlacar do jogo: [{player_v}] x [{pc_venceu}]") 
            
 # Usando comparação para definir o ganhador do Jogo (PLAYER)
+ 
 
+#    print("\n----- FIM DA RODADA -----\n") # Final da rodada
+
+#    play_again = input("\nDeseja jogar novamente? [s/n]\nR: ") # Variavel para reiniciar o Play Again
+
+#    while play_again != "s": # Caso o player coloque qualquer caracter difirete de "s" ou "n"
     
+#        print("Por favor, digite uma opção valida!") # Mensagem de caracter invalido!
+#        play_again = input("\nDeseja jogar novamente? [s/n]\nR: ") # variavel para voltar para o primeiro laço de repetição caso a resposta seja "s"
 
-    print("\n----- FIM DA RODADA -----\n") # Final da rodada
+#        if play_again == "n": #Caso a resposta seja "n" o programa encerra
+#            print("\n----- FIM DO PROGRAMA -----\n")
+#            break # Break para interromper o laço!       
 
-    play_again = input("\nDeseja jogar novamente? [s/n]\nR: ") # Variavel para reiniciar o Play Again
+#----------------------------------------------------------------------------------------------------
 
-    while play_again != "s": # Caso o player coloque qualquer caracter difirete de "s" ou "n"
-    
-        print("Por favor, digite uma opção valida!") # Mensagem de caracter invalido!
-        play_again = input("\nDeseja jogar novamente? [s/n]\nR: ") # variavel para voltar para o primeiro laço de repetição caso a resposta seja "s"
+# Aprendendo listas:
 
-        if play_again == "n": #Caso a resposta seja "n" o programa encerra
-            print("\n----- FIM DO PROGRAMA -----\n")
-            break # Break para interromper o laço!       
+# Exemplo:
+
+#frutas = ["Maça", "Banana", "Caju"]
+#frutas.sort()
+#print(frutas)
+
+# ------------------------------------------------------------
+
+# Criação e Acesso: Crie uma lista com 5 nomes de cidades. Imprima apenas a primeira  e a última cidade da lista.
+
+#cidades = ["Londrina", "Cambé", "Ibiporã", "Rolândia", "Curitiba"]
+
+#print(cidades[0], cidades[-1])
+
+#Alteração Manual: Dada a lsita numeros = [10, 20, 30, 40, 50], altere o valor do terceiro elemento para 100 e imprima a lista atualizada
+
+#numeros = [10, 20, 30, 40, 50]
+
+#numeros[2] = 100
+#print(numeros)
+
+# Uso da Tupla: Crie uma tupla com os meses do ano. Tente alterar o primeiro mes para "Janeiro Alterado" e observe o erro gerado pelo Python. Escreva em um comentário por que o erro ocorreu.
+
+#meses = ("Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro")
+
+# Erro: 'tuple' object does not support item assignment
+
+# Explicação: O erro acontece porque a tupla não pode ser alterada
+
+# Entrada Dinamica: Crie um programa que peça ao usuário 5 numeros, adicione -os em uma lsita usando .append() e, ao final, exiba a soma de todos os itens (use a função sum()).
+
+
+#contagem = 0
+#lista = []
+
+#print("\nDigite 5 numeros na lista para fazer a soma\n")
+
+#for corredor in range(5):
+
+#    numero = int(input(f"Digite o {corredor+1}° numero: "))
+#    lista.append(numero)
+
+#soma = sum(lista)
+
+#print(f"\nlista = {lista}")
+#print(f"A soma da lista é = {soma}")
+
+#print("\n----- FIM DO PROGRAMA -----\n")
+
+#--------------------------------------------------------------------------------------
+
+# Ordenação de nomes: Peça ao usuario nomes de convidados ate que ele digite ate que ele digite "fim". Guarde os nomes em uma lista, coloque-os em ordem alfabetica e exiba a lista final.
+
+
+
+
+
+
+
+
+
+
+
 
 
 
