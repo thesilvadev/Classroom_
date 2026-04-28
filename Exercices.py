@@ -1159,10 +1159,31 @@ import random
 
 #--------------------------------------------------------------------------------------
 
-# Ordenação de nomes: Peça ao usuario nomes de convidados ate que ele digite ate que ele digite "fim". Guarde os nomes em uma lista, coloque-os em ordem alfabetica e exiba a lista final.
+# Ordenação de nomes: Peça ao usuario nomes de convidados ate que ele digite "fim". Guarde os nomes em uma lista, coloque-os em ordem alfabetica e exiba a lista final.
 
+convidados = []
+contador = 0
 
+print("\n----- ESCREVA A LISTA DE CONVIDADOS -----\n")
+print("Ao finalizar os nomes da lista digite (fim)\n")
 
+while True:
+    
+    contador = contador + 1
+    
+    nome = input(f"Digite o nome do {contador}° convidado: ").capitalize()
+    convidados.append(nome)
+    convidados.sort()
+
+    total_convidados = contador - 1
+
+    if nome == "Fim":
+        convidados.remove("Fim")
+        print(f"\n===== Fim da lista =====")
+        print(f"\nTotal de convidados: {total_convidados}")
+        print(f"Nomes dos convidados: {convidados}")
+        break
+    
 
 
 
