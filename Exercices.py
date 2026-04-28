@@ -1161,33 +1161,38 @@ import random
 
 # Ordenação de nomes: Peça ao usuario nomes de convidados ate que ele digite "fim". Guarde os nomes em uma lista, coloque-os em ordem alfabetica e exiba a lista final.
 
-convidados = []
-contador = 0
+#convidados = []
+#contador = 0
 
-print("\n----- ESCREVA A LISTA DE CONVIDADOS -----\n")
-print("Ao finalizar os nomes da lista digite (fim)\n")
-
-while True:
+#print("\n----- ESCREVA A LISTA DE CONVIDADOS -----\n")
+#print("Ao finalizar os nomes da lista digite (fim)\n")
+#
+#while True:
     
-    contador = contador + 1
+#    contador = contador + 1
     
-    nome = input(f"Digite o nome do {contador}° convidado: ").capitalize()
-    convidados.append(nome)
-    convidados.sort()
-
-    total_convidados = contador - 1
-
-    if nome == "Fim":
-        convidados.remove("Fim")
-        print(f"\n===== Fim da lista =====")
-        print(f"\nTotal de convidados: {total_convidados}")
-        print(f"Nomes dos convidados: {convidados}")
-        break
+#    nome = input(f"Digite o nome do {contador}° convidado: ").capitalize()
+#    convidados.append(nome)
+#    convidados.sort()
+#
+#    total_convidados = contador - 1
+#
+#   if nome == "Fim":
+#        convidados.remove("Fim")
+#        print(f"\n===== Fim da lista =====")
+#        print(f"\nTotal de convidados: {total_convidados}")
+#        print(f"Nomes dos convidados: {convidados}")
+#        break
     
+#--------------------------------------------------------------------------------------------------------------------
 
+# Fatiamento (Slicing): Crie uma lista de 1 a 10. Use o fatiamento para extrair e imprimir apenas os números do índice 2 ao 7.
 
+lista = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
+numeros = lista[1:7]
 
+print(numeros)
 
 
 
