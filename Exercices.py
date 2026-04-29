@@ -1188,15 +1188,29 @@ import random
 
 # Fatiamento (Slicing): Crie uma lista de 1 a 10. Use o fatiamento para extrair e imprimir apenas os números do índice 2 ao 7.
 
-lista = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+#lista = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
-numeros = lista[1:7]
+#numeros = lista[1:7]
 
-print(numeros)
+#print(numeros)
 
+#--------------------------------------------------------------------
 
+#Busca de Item: Crie uma lista de cores. Peça ao usuário para digitar uma cor e, usando o operador in, verifique se a cor está na lista. Informe o resultado
 
+cores = ("Azul", "Amarelo", "Verde", "Vermelho", "Roxo", "Branco", "Preto")
 
+user = input("\nDigite uma cor para avaliar: ").capitalize()
+
+while user != cores:
+
+    if user in cores:
+        print(f"\nA cor {user} está disponível!")
+        break
+
+    elif user != cores:
+        print("Cor indisponível!")
+    user = input("Digite outra cor para avaliar: ").capitalize()
 
 
 
