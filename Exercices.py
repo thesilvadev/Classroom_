@@ -1194,7 +1194,7 @@
 
 #print(numeros)
 
-#--------------------------------------------------------------------
+#-------------------------------------------------------------------------------------------------------------------------
 
 #Busca de Item: Crie uma lista de cores. Peça ao usuário para digitar uma cor e, usando o operador in, verifique se a cor está na lista. Informe o resultado
 
@@ -1228,30 +1228,53 @@
     
 #print(nova_lista)
 
+#-----------------------------------------------------------------------------------------------------------
+
 # Filtro de Dados: Peça 10 notas de alunos e armazene em uma lista. Calcule a média e, em
 # seguida, exiba apenas as notas que ficaram abaixo da média da turma
 
 
-notas = []
-baixa_media = []
+#notas = []
+#baixa_media = []
 
-for contador in range(10):
+#for contador in range(10):
 
-    aluno = float(input(f"Digite a {contador +1}° nota: "))
+#    aluno = float(input(f"Digite a {contador +1}° nota: "))
 
-    notas.append(aluno)
+#    notas.append(aluno)
 
-soma = sum(notas)
+#soma = sum(notas)
 
-media = soma / 10
+#media = soma / 10
 
-for nota in notas:
-    if nota <= media:
-        baixa_media.append(nota)
-
-
-print(f"\nAs notas foram: {notas}")
-print(f"\nA media do aluno foi: {media}")
-print(f"\nAs notas abaixo da média foram: {baixa_media}")
+#for nota in notas:
+#    if nota <= media:
+#       baixa_media.append(nota)
 
 
+#print(f"\nAs notas foram: {notas}")
+#print(f"\nA media do aluno foi: {media}")
+#print(f"\nAs notas abaixo da média foram: {baixa_media}")
+
+#-----------------------------------------------------------------------------------------------------------
+
+# Matriz Simples (Desafio): Crie uma lista chamada estoque que contenha 3 sublistas. Cada
+# sublista deve ter [nome_produto, quantidade]. Percorra essa lista e imprima o nome de cada
+# produto e o total de itens no estoque somando todas as quantidades
+
+
+estoque = [
+#[Nome, Qtd]
+["Teclado", 50],
+["Mouse", 100],
+["Monitor", 20]
+]
+                    
+print(f"\nProduto: {estoque[0]}") # linha 0 inteira
+print(f"\nProduto: {estoque[1]}")
+print(f"\nProduto: {estoque[2]}")
+
+       # O segundo cochete é o segundo item da lista
+soma = estoque[0][1] + estoque[1][1] + estoque[2][1]
+
+print(f"\nA soma dos itens em estoque é: {soma}")
