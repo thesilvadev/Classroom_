@@ -846,7 +846,7 @@
 #v3 Faça o programa parar de jogar os dados se for detectado "Dados iguais"  
 
 
-import random  
+#import random  
 
 
 #contagem = 0  
@@ -1198,22 +1198,32 @@ import random
 
 #Busca de Item: Crie uma lista de cores. Peça ao usuário para digitar uma cor e, usando o operador in, verifique se a cor está na lista. Informe o resultado
 
-cores = ("Azul", "Amarelo", "Verde", "Vermelho", "Roxo", "Branco", "Preto")
+#cores = ("Azul", "Amarelo", "Verde", "Vermelho", "Roxo", "Branco", "Preto")
 
-user = input("\nDigite uma cor para avaliar: ").capitalize()
+#user = input("\nDigite uma cor para avaliar: ").capitalize()
 
-while user != cores:
+#while user != cores:
 
-    if user in cores:
-        print(f"\nA cor {user} está disponível!")
-        break
+#    if user in cores:
+#        print(f"\nA cor {user} está disponível!")
+#        break
 
-    elif user != cores:
-        print("Cor indisponível!")
-    user = input("Digite outra cor para avaliar: ").capitalize()
+#    elif user != cores:
+#        print("Cor indisponível!")
+#    user = input("Digite outra cor para avaliar: ").capitalize()
 
+#-------------------------------------------------------------------------------------------------------------------------------
 
+#Remoção de Duplicatas: Dada uma lista com números repetidos, crie uma nova lista que
+#contenha apenas os números únicos da lista original (dica: percorra a lista original com um for)
 
+lista = [1, 1, 2, 2, 3, 3, 4, 4, 5, 5, 6, 6, 7, 7, 8, 8, 9, 9]
+nova_lista = []
 
-
-
+for numero in lista:    
+    if not numero in nova_lista:
+        nova_lista.append(numero)
+    elif numero in nova_lista:
+        continue
+    
+print(nova_lista)
