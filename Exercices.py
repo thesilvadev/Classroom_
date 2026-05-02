@@ -1217,13 +1217,41 @@
 #Remoção de Duplicatas: Dada uma lista com números repetidos, crie uma nova lista que
 #contenha apenas os números únicos da lista original (dica: percorra a lista original com um for)
 
-lista = [1, 1, 2, 2, 3, 3, 4, 4, 5, 5, 6, 6, 7, 7, 8, 8, 9, 9]
-nova_lista = []
+#lista = [1, 1, 2, 2, 3, 3, 4, 4, 5, 5, 6, 6, 7, 7, 8, 8, 9, 9]
+#nova_lista = []
 
-for numero in lista:    
-    if not numero in nova_lista:
-        nova_lista.append(numero)
-    elif numero in nova_lista:
-        continue
+#for numero in lista:    
+#    if not numero in nova_lista:
+#        nova_lista.append(numero)
+#    elif numero in nova_lista:
+#        continue
     
-print(nova_lista)
+#print(nova_lista)
+
+# Filtro de Dados: Peça 10 notas de alunos e armazene em uma lista. Calcule a média e, em
+# seguida, exiba apenas as notas que ficaram abaixo da média da turma
+
+
+notas = []
+baixa_media = []
+
+for contador in range(10):
+
+    aluno = float(input(f"Digite a {contador +1}° nota: "))
+
+    notas.append(aluno)
+
+soma = sum(notas)
+
+media = soma / 10
+
+for nota in notas:
+    if nota <= media:
+        baixa_media.append(nota)
+
+
+print(f"\nAs notas foram: {notas}")
+print(f"\nA media do aluno foi: {media}")
+print(f"\nAs notas abaixo da média foram: {baixa_media}")
+
+
