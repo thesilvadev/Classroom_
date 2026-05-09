@@ -1283,19 +1283,119 @@
 
 # Aprendendo mais sobre vetores e listas 
 
-#pesos = int(input("\nQuantas series foram feitas no treino de costas?\nR: ")) # Variavel para coletar quantos itens será atribuido na lista
+# pesos = int(input("\nQuantas series foram feitas no treino de costas?\nR: ")) # Variavel para coletar quantos itens será atribuido na lista
 
-#vet = [0 for x in range(pesos)] # Cria lista de zeros de acordo com a quantidade definida na variavel (pesos) Ex: pesos = 4; vet = 0, 0, 0, 0
+# vet = [0 for x in range(pesos)] # Cria lista de zeros de acordo com a quantidade definida na variavel (pesos) Ex: pesos = 4; vet = 0, 0, 0, 0
 
-#for k in range(pesos): # Em cada "volta" na variavel peso;
+# for k in range(pesos): # Em cada "volta" na variavel peso;
     
-#    vet[k] = int(input(f"\nDigite o {k +1}° peso: ")) # A variavel "vet[k]" significa que o input vai subtituir a posição do k na lista vet;
+#     vet[k] = int(input(f"\nDigite o {k +1}° peso: ")) # A variavel "vet[k]" significa que o input vai subtituir a posição do k na lista vet;
 
-#print(f"\nForam registrados no treino de hoje:\n") # Mostrando o resultado
+# print(f"\nForam registrados no treino de hoje:\n") # Mostrando o resultado
 
-#for k in range(pesos): # Para cada "volta" determinada pela variavel (pesos);
+# for k in range(pesos): # Para cada "volta" determinada pela variavel (pesos);
     
-#    print(f"A {k +1}° serie foi com {vet[k]} kg") # Imprime o valor (qntd da variavel pesos) vezes, mostrando os valores digitados 
+#     print(f"A {k +1}° serie foi com {vet[k]} kg") # Imprime o valor (qntd da variavel pesos) vezes, mostrando os valores digitados 
 
 # -----------------------------------------------------------------------------------------------------------
+
+# Meu Primeiro Dicionario: Crie um dicionario chamado contato que armazene o nome, o telefone e o email de uma pessoa. Imprima apenas o email utilizando a chave correspondente
+
+# contato = {}
+
+
+# contato["NOME"] = input("Digite o seu nome: ").capitalize()
+
+# contato["TELEFONE"] = int(input("Digite seu telefone: "))
+
+# contato["EMAIL"] = input("Digite seu email: ").lower()
+
+
+
+
+# print(contato["EMAIL"])
+
+
+
+#-----------------------------------------------------------------------------------------------------------------
+
+# Cardápio Digital: Crie um dicionário precos onde as chaves são nomes de
+# produtos (ex: "Salgado", "Suco", "Doce") e os valores são os preços. Altere o
+# preço do "Suco" para um novo valor e adicione um novo item chamado "Café" ao
+# dicionário
+
+
+# precos = {"Salgado": 8,
+#           "Suco": 12,
+#           "Doce": 2
+# }
+
+# precos["Suco"] = int(input("Coloque o novo valor do suco: "))
+
+# precos["Café"] = 5
+
+# print(precos)
+
+
+#------------------------------------------------------------------------------------------------------------------
+
+# CONJUNTO DE CORES: Crie uma lista chamada lista_cores com várias cores,
+# repetindo algumas delas (ex: "azul", "verde", "azul", "vermelho"). Converta essa lista para um CONJUNTO (SET)
+# e imprima o resultado. Explique, em um comentario, o que aconteceu com as cores repetidas
+
+# conj_cores = set()
+
+# lista_cores = ["azul", "verde", "azul", "vermelho"]
+
+# conj_cores.update(["azul", "verde", "azul", "vermelho"])
+
+# print(conj_cores)
+
+# # Imprime o azul somente uma vez porque o set não permite repetições dentro do conjunto
+
+
+# #---------------------------------------------------------------------------------------------------------------------
+
+# Acesso Seguro: Utilize o dicionário de precos do exercício 2. Peça ao usuário para
+# digitar o nome de um produto. Use o método .get() para exibir o preço,
+# mostrando a mensagem "Produto não encontrado" caso a chave não exista.
+
+
+# precos = {"Salgado": 8,
+#           "Suco": 12,
+#           "Doce": 2
+# }
+
+# precos["Suco"] = int(input("Coloque o novo valor do suco: "))
+
+# precos["Café"] = 5
+
+# print(precos)
+
+
+# new_product = input("\nAdicione um novo produto: ")
+
+# print(precos.get(new_product, "Não encontrado"))
+
+#------------------------------------------------------------------------------------------------------------------------
+
+
+# Dicionário de Notas: Crie um programa que armazene o nome de 3 alunos e
+# suas respectivas notas em um dicionário. Percorra o dicionário usando um laço
+# for e imprima: "O aluno [Nome] tirou nota [Nota]".
+
+notas = {}
+
+for dados in range(3):
+
+    nome = input("\nDigite o nome do aluno: ").capitalize()
+
+    nota = float(input("Digite a respectiva nota: "))
+
+    notas[nome] = nota
+
+
+for NOME, NOTA in notas.items():
+
+    print(f"\nO aluno {NOME} tirou nota: {NOTA}")
 
