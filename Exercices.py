@@ -1384,18 +1384,50 @@
 # suas respectivas notas em um dicionário. Percorra o dicionário usando um laço
 # for e imprima: "O aluno [Nome] tirou nota [Nota]".
 
-notas = {}
+# notas = {}
 
-for dados in range(3):
+# for dados in range(3):
 
-    nome = input("\nDigite o nome do aluno: ").capitalize()
+#     nome = input("\nDigite o nome do aluno: ").capitalize()
 
-    nota = float(input("Digite a respectiva nota: "))
+#     nota = float(input("Digite a respectiva nota: "))
 
-    notas[nome] = nota
+#     notas[nome] = nota
 
 
-for NOME, NOTA in notas.items():
+# for NOME, NOTA in notas.items():
 
-    print(f"\nO aluno {NOME} tirou nota: {NOTA}")
+#     print(f"\nO aluno {NOME} tirou nota: {NOTA}")
 
+#-------------------------------------------------------------------------------------------------------------------------
+
+# Verificação de Convidados: Crie um conjunto (set) com nomes de pessoas
+# convidadas para uma festa. Peça ao usuário para digitar um nome e, usando o
+# operador in, verifique se a pessoa está na lista, exibindo uma mensagem de
+# "Bem-vindo" ou "Nome não está na lista".
+
+# Criando o conjunto (set) para armazenar sem duplicidade
+convidados = set()
+
+# Titulo da aplicação
+print("\n----- LISTA DE CONVIDADOS -----\n")
+while True:
+
+       # Coletando os nomes
+       nome = input("\nEscreva o nome do convidado: ").lower()
+
+       # Adicionando os nomes ao conjunto (convidados)
+       convidados.add(nome)
+
+       # Criando a lista de convidados que exibirá a mensagem "Bem-vindo" quando for digitado
+       convidados_vip = {"nicolas", "lucas", "miguel", "gabriel"}
+
+       # Criando nova variavel para verificar se os nomes dentro do conjunto(convidados) estão na lista de convidados_vip
+       conferencia = convidados.intersection(convidados_vip)
+
+       # Verificando se existe esse item dentro de conferencia
+       if conferencia:
+              print("\nBem-vindo")
+              break
+       else:
+              print("Nome não está na lista")
