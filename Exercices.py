@@ -1406,28 +1406,51 @@
 # operador in, verifique se a pessoa está na lista, exibindo uma mensagem de
 # "Bem-vindo" ou "Nome não está na lista".
 
-# Criando o conjunto (set) para armazenar sem duplicidade
-convidados = set()
+# # Criando o conjunto (set) para armazenar sem duplicidade
+# convidados = set()
 
-# Titulo da aplicação
-print("\n----- LISTA DE CONVIDADOS -----\n")
-while True:
+# # Titulo da aplicação
+# print("\n----- LISTA DE CONVIDADOS -----\n")
 
-       # Coletando os nomes
-       nome = input("\nEscreva o nome do convidado: ").lower()
+# # Coletando os nomes
+# nome = input("\nEscreva o nome do convidado: ").lower()
 
-       # Adicionando os nomes ao conjunto (convidados)
-       convidados.add(nome)
+# # Adicionando os nomes ao conjunto (convidados)
+# convidados.add(nome)
 
-       # Criando a lista de convidados que exibirá a mensagem "Bem-vindo" quando for digitado
-       convidados_vip = {"nicolas", "lucas", "miguel", "gabriel"}
+# # Criando a lista de convidados que exibirá a mensagem "Bem-vindo" quando for digitado
+# convidados_vip = {"nicolas", "lucas", "miguel", "gabriel"}
 
-       # Criando nova variavel para verificar se os nomes dentro do conjunto(convidados) estão na lista de convidados_vip
-       conferencia = convidados.intersection(convidados_vip)
+# # Criando nova variavel para verificar se os nomes dentro do conjunto(convidados) estão na lista de convidados_vip
+# conferencia = convidados.intersection(convidados_vip)
 
-       # Verificando se existe esse item dentro de conferencia
-       if conferencia:
-              print("\nBem-vindo")
-              break
-       else:
-              print("Nome não está na lista")
+# # Verificando se existe esse item dentro de conferencia
+# if conferencia:
+#        print("\nBem-vindo")
+# else:
+#        print("Nome não está na lista")
+
+#------------------------------------------------------------------------------------------------------------------------
+
+# União de Turmas: Crie dois conjuntos: turma_python e turma_java, cada um
+# com nomes de 4 alunos. Alguns alunos devem estar em ambas as listas. Use o
+# operador de união (|) para exibir todos os alunos matriculados e o de interseção
+# (&) para exibir quem estuda nas duas turmas.
+
+conj_1 = set()
+turma_python = {"nicolas", "lucas", "miguel", "joao"}
+
+conj_2 = set()
+turma_java = {"nicolas", "lucas", "felipe", "maringonda"}
+
+soma_turmas = turma_python | turma_java
+
+ambas_turmas = turma_python & turma_java
+
+print(f"O total de alunos são: {len(soma_turmas)}")
+print(f"{soma_turmas}")
+print(f"\nOs alunos que frequentam ambas as turmas são: {ambas_turmas}")
+
+
+
+
