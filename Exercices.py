@@ -1283,17 +1283,19 @@
 
 # Aprendendo mais sobre vetores e listas 
 
-pesos = int(input("\nQuantas series foram feitas no treino de costas?\nR: ")) # Variavel para coletar quantos itens será atribuido na lista
+#pesos = int(input("\nQuantas series foram feitas no treino de costas?\nR: ")) # Variavel para coletar quantos itens será atribuido na lista
 
-vet = [0 for x in range(pesos)] # Cria lista de zeros de acordo com a quantidade definida na variavel (pesos) Ex: pesos = 4; vet = 0, 0, 0, 0
+#vet = [0 for x in range(pesos)] # Cria lista de zeros de acordo com a quantidade definida na variavel (pesos) Ex: pesos = 4; vet = 0, 0, 0, 0
 
-for k in range(pesos): # Em cada "volta" na variavel peso;
+#for k in range(pesos): # Em cada "volta" na variavel peso;
     
-    vet[k] = int(input(f"\nDigite o {k +1}° peso: ")) # A variavel "vet[k]" significa que o input vai subtituir a posição do k na lista vet;
+#    vet[k] = int(input(f"\nDigite o {k +1}° peso: ")) # A variavel "vet[k]" significa que o input vai subtituir a posição do k na lista vet;
 
-print(f"\nForam registrados no treino de hoje:\n") # Mostrando o resultado
+#print(f"\nForam registrados no treino de hoje:\n") # Mostrando o resultado
 
-for k in range(pesos): # Para cada "volta" determinada pela variavel (pesos);
+#for k in range(pesos): # Para cada "volta" determinada pela variavel (pesos);
     
-    print(f"A {k +1}° serie foi com {vet[k]} kg") # Imprime o valor (qntd da variavel pesos) vezes, mostrando os valores digitados 
+#    print(f"A {k +1}° serie foi com {vet[k]} kg") # Imprime o valor (qntd da variavel pesos) vezes, mostrando os valores digitados 
+
+# -----------------------------------------------------------------------------------------------------------
 
